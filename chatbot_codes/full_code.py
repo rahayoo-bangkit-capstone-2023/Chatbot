@@ -24,7 +24,7 @@ lemmatizer=WordNetLemmatizer()
 words=[]
 classes=[]
 documents=[]
-ignore=['?','!',',',"'s"]
+ignore=['?','!',',',"'s", "'", " so "]
 
 data_file=open('intents.json').read()
 intents=json.loads(data_file)
