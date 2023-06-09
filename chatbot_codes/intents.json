@@ -333,15 +333,50 @@
             ]
         },
         {
-            "tag": "greetreply",
+            "tag": "great-reply",
             "patterns": [
-                "i am good",
-                "I'm good",
-                "i am fine",
-                " i'm fine","good"
+                "i am good", "I had the opportunity to learn something new today.",
+                "I'm good", "There were a few interesting moments here and there.",
+                "i am fine", "things went smoothly for the most part.",
+                "i'm fine","good", "it was good", "it went well", "it was alright",
+                "There were a few interesting projects or assignments that kept me engaged.",
+                "I had some interesting conversations and tasks at work.",
+                "Work was challenging but rewarding."
             ],
             "responses": [
-                "Good to know!"
+                "Good to know! Do you want to talk more about it?",
+                "That's great to hear! Do you have more to say about your day?",
+                "I'm glad to know you're doing well. Do you want to share how was your day been?"
+            ]
+        },
+        {
+            "tag": "flat-reply",
+            "patterns": [
+                "not much to report", "just another day at work",
+                "just a typical day", "It was a productive day overall.",
+                "nothing out of the ordinary", "There were a couple of noteworthy events during the day.",
+                "no major highlights", "nothing too exciting"
+            ],
+            "responses": [
+                "Do you want to talk more about it?",
+                "Do you have more to say about your day?",
+                "Do you want to share how was your day been?"
+            ]
+        },
+        {
+            "tag": "tough-reply",
+            "patterns": [
+                "It was a really tough day.", "Things didn't go well at all.",
+                "It was quite frustrating and disappointing.", "I had a really rough time today.",
+                "it was a really bad day", "I'm feeling upset and angry about how things went.",
+                "Work was a complete mess and nothing interesting happened.", "I had a lot of challenges and setbacks today.",
+                "I'm feeling really down and frustrated about my day.", "Unfortunately, it was a really tough and uneventful day at work."
+            ],
+            "responses": [
+                "I'm here to listen if you want to share more about what happened.",
+                "I'm sorry to hear that. Is there anything specific that happened that you'd like to talk about?",
+                "It's understandable to feel that way. Sometimes days can be tough. Do you want to talk about it?",
+                "Take some time for yourself to relax and unwind. Do you wanna talk about it?"
             ]
         },
         {
@@ -1495,6 +1530,5 @@
         ]
       }
 
-    
     ]
 }
