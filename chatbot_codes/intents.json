@@ -1147,6 +1147,354 @@
             "Collaborative coding projects are an excellent opportunity to learn from each other and create amazing results together. How does the collaborative nature of your coding work contribute to your professional growth?",
             "Working with talented and positive colleagues is inspiring and can have a tremendous impact on your coding journey. How does their positivity and talent influence your own growth and motivation?"
         ]
-    }
+    },
+    {
+        "tag": "umur",
+        "patterns": [
+            "berapa umurmu?",
+            "berapa usiamu?",
+            "umur kamu berapa?"
+        ],
+        "responses": [
+            "Saya adalah sebuah chatbot, jadi saya tidak memiliki umur."
+        ]
+    },
+    {
+        "tag": "lokasi",
+        "patterns": [
+            "dimana kamu berada?",
+            "di mana tempatmu?",
+            "lokasi kamu di mana?"
+        ],
+        "responses": [
+            "Saya adalah chatbot virtual, jadi saya tidak memiliki lokasi fisik."
+        ]
+    },
+    {
+        "tag": "nama",
+        "patterns": [
+            "siapa nama kamu?",
+            "apa nama lengkapmu?",
+            "nama kamu apa?"
+        ],
+        "responses": [
+            "Saya adalah chatbot virtual, jadi saya tidak memiliki nama lengkap. Anda bisa memanggil saya Chatbot."
+        ]
+    },
+    {
+        "tag": "pendidikan",
+        "patterns": [
+            "kamu memiliki pendidikan apa?",
+            "apa latar belakang pendidikanmu?",
+            "darimana kamu belajar?"
+        ],
+        "responses": [
+            "Saya dirancang oleh tim Rahayoo untuk memberikan informasi dan bantuan kepada pengguna. Saya tidak memiliki latar belakang pendidikan formal."
+        ]
+    },
+    {
+        "tag": "terima-kasih",
+        "patterns": [
+            "terima kasih",
+            "makasih",
+            "thanks"
+        ],
+        "responses": [
+            "Sama-sama! Saya senang bisa membantu."
+        ]
+    },
+    {
+        "tag": "umur",
+        "patterns": [
+            "berapa umur kamu?",
+            "umur kamu berapa?"
+        ],
+        "responses": [
+            "Saya adalah chatbot virtual, jadi saya tidak memiliki umur."
+        ]
+    },
+    {
+        "tag": "produk",
+        "patterns": [
+            "apakah kamu menjual produk?",
+            "apa yang kamu jual?"
+        ],
+        "responses": [
+            "Saya adalah chatbot yang dirancang untuk memberikan informasi dan bantuan. Saya tidak menjual produk."
+        ]
+    },
+    {
+        "tag": "kesalahan",
+        "patterns": [
+            "saya mengalami kesalahan",
+            "tidak bisa menjalankan aplikasi"
+        ],
+        "responses": [
+            "Mohon maaf atas ketidaknyamanannya. Apakah Anda sudah mencoba me-restart aplikasi? Jika masih mengalami masalah, mungkin saya bisa membantu lebih lanjut jika Anda memberikan detail kesalahan yang terjadi."
+        ]
+    },
+    {
+        "tag": "film-favorit",
+        "patterns": [
+            "apa film favoritmu?",
+            "film terbaik menurutmu"
+        ],
+        "responses": [
+            "Saya adalah chatbot, jadi saya tidak memiliki film favorit. Namun, beberapa film yang sering direkomendasikan adalah Interstellar, Fast Furious, dan Avenger."
+        ]
+    },
+    {
+        "tag": "bantuan",
+        "patterns": [
+            "tolong bantu saya",
+            "butuh bantuan"
+        ],
+        "responses": [
+            "Tentu, saya akan berusaha membantu Anda. Silakan jelaskan permasalahan atau pertanyaan yang Anda hadapi, dan saya akan mencoba memberikan solusi atau informasi yang relevan."
+        ]
+    },
+    {
+        "tag": "selamat",
+        "patterns": [
+            "halo chatbot"
+        ],
+        "responses": [
+            "Ada yang bisa saya bantu?"
+        ]
+    },
+    {
+        "tag": "galau",
+        "patterns": [
+            "saya merasa sedih",
+            "hidup ini sulit",
+            "apa arti hidup?",
+            "aku bingung",
+            "bagaimana menghadapi kegagalan?"
+        ],
+        "responses": [
+            "Saya mengerti bahwa ada saat-saat ketika kita merasa sedih atau galau. Perasaan seperti itu adalah hal yang manusiawi. Jika kamu ingin berbicara tentang hal tersebut, kamu bisa mencoba berbagi dengan orang yang kamu percaya atau mencari dukungan dari teman dekat. Ingatlah bahwa dalam hidup ini, kita menghadapi berbagai tantangan dan kegagalan, tetapi itu bukan akhir dari segalanya. Setiap kegagalan adalah kesempatan untuk belajar dan tumbuh. Jangan ragu untuk mencari bantuan jika kamu merasa kesulitan menghadapi perasaan galau tersebut."
+        ]
+    },
+    {
+        "tag": "senang",
+        "patterns": [
+            "hari ini sangat menyenangkan",
+            "aku merasa bahagia",
+            "apa kabar?",
+            "halo!",
+            "ada kabar baik?"
+        ],
+        "responses": [
+            "Senang mendengarnya! Semoga hari-harimu terus dipenuhi dengan kebahagiaan. Jika ada hal khusus yang membuatmu senang, ceritakan lebih banyak tentang pengalaman tersebut. Saya senang bisa berbagi kebahagiaan denganmu!"
+        ]
+    },
+    {
+        "tag": "sakit",
+        "patterns": [
+            "aku merasa tidak enak badan",
+            "saya sedang sakit",
+            "apa yang harus saya lakukan jika sakit?",
+            "aku punya demam",
+            "sakit kepala"
+        ],
+        "responses": [
+            "Maaf mendengarnya. Jika kamu merasa tidak enak badan, penting untuk istirahat yang cukup dan menjaga pola makan yang sehat. Minum banyak air putih dan hindari aktivitas yang melelahkan. Jika kondisimu tidak membaik atau semakin parah, sebaiknya hubungi tenaga medis atau dokter terdekat. Mereka dapat memberikan nasihat medis yang lebih akurat dan tepat sesuai dengan gejala yang kamu alami."
+        ]
+    },
+    {
+        "tag": "suami",
+        "patterns": [
+            "bagaimana cara memahami suami?",
+            "apa yang harus dilakukan jika ada masalah dengan suami?",
+            "apa yang membuat suami bahagia?",
+            "bagaimana cara memperkuat hubungan dengan suami?",
+            "apa yang sebaiknya dilakukan saat suami sedang stres?"
+        ],
+        "responses": [
+            "Memahami suami adalah proses yang kontinu dan setiap hubungan memiliki dinamika yang berbeda. Komunikasi yang jujur dan saling mendengarkan adalah kunci penting dalam memahami suami. Jika ada masalah dalam hubungan, penting untuk berbicara secara terbuka dan mencari solusi bersama. Memperhatikan kebutuhan dan kebahagiaan suami juga dapat memperkuat hubungan. Saat suami sedang stres, dengarkan dia dengan empati dan tawarkan dukungan. Berusaha memahami perasaan dan perspektifnya dapat membantu meredakan stresnya. Setiap hubungan memiliki tantangan sendiri, tetapi dengan komunikasi yang baik dan saling mendukung, hubungan dengan suami dapat tumbuh menjadi lebih kuat."
+        ]
+    },
+    {
+        "tag": "hamil",
+        "patterns": [
+            "aku sedang hamil",
+            "apa yang sebaiknya dilakukan selama kehamilan?",
+            "bagaimana cara merawat kehamilan?",
+            "apa saja makanan yang baik untuk ibu hamil?",
+            "apakah olahraga aman saat hamil?"
+        ],
+        "responses": [
+            "Selamat atas kehamilanmu! Selama kehamilan, sangat penting untuk menjaga kesehatan dan keamanan baik ibu maupun janin. Pastikan untuk menjalani pemeriksaan rutin dengan dokter kandungan, mengikuti pola makan sehat, dan mendapatkan istirahat yang cukup. Hindari konsumsi makanan atau minuman yang tidak dianjurkan selama kehamilan, dan pastikan untuk berkonsultasi dengan dokter sebelum melakukan olahraga atau aktivitas fisik yang intens. Jika ada pertanyaan atau kekhawatiran selama kehamilan, jangan ragu untuk berkonsultasi dengan dokter atau bidan yang memahami kondisimu dengan baik."
+        ]
+    },
+    {
+        "tag": "istri",
+        "patterns": [
+            "bagaimana cara memahami istri?",
+            "apa yang harus dilakukan jika ada masalah dengan istri?",
+            "apa yang membuat istri bahagia?",
+            "bagaimana cara memperkuat hubungan dengan istri?",
+            "apa yang sebaiknya dilakukan saat istri sedang stres?"
+        ],
+        "responses": [
+            "Memahami istri adalah proses yang kontinu dan setiap hubungan memiliki dinamika yang berbeda. Komunikasi yang jujur dan saling mendengarkan adalah kunci penting dalam memahami istri. Jika ada masalah dalam hubungan, penting untuk berbicara secara terbuka dan mencari solusi bersama. Memberikan perhatian, penghargaan, dan dukungan pada istri juga dapat membuatnya bahagia. Saat istri sedang stres, berikan dukungan emosional dan praktis. Dengarkan dia dengan penuh perhatian dan tawarkan bantuan sesuai kebutuhannya. Setiap hubungan memiliki tantangan sendiri, tetapi dengan komunikasi yang baik dan saling mendukung, hubungan dengan istri dapat tumbuh menjadi lebih kuat."
+        ]
+    },
+    {
+        "tag": "depresi",
+        "patterns": [
+            "apa itu depresi?",
+            "bagaimana cara mengatasi depresi?",
+            "apa yang bisa dilakukan untuk membantu seseorang yang mengalami depresi?",
+            "apa tanda-tanda depresi?",
+            "kapan sebaiknya mencari bantuan profesional untuk depresi?"
+        ],
+        "responses": [
+            "Depresi adalah gangguan mental yang ditandai dengan perasaan sedih, kehilangan minat atau kegairahan, perubahan pola tidur atau nafsu makan, kelelahan, perasaan bersalah yang berlebihan, dan sulit berkonsentrasi. Mengatasi depresi membutuhkan pendekatan holistik yang melibatkan dukungan sosial, perawatan medis, dan terapi psikologis. Jika seseorang mengalami depresi, penting untuk mendengarkan dengan empati dan menunjukkan perhatian pada perasaan mereka. Bantuan profesional, seperti psikoterapi atau obat-obatan, diperlukan dalam kasus-kasus yang lebih parah. Jika kamu atau seseorang yang kamu kenal mengalami tanda-tanda depresi, sangat dianjurkan untuk mencari bantuan profesional segera."
+        ]
+    },
+    {
+        "tag": "aku depresi",
+        "patterns": [
+            "aku merasa sedih dan kosong",
+            "hidupku terasa tanpa makna",
+            "aku merasa putus asa",
+            "apa yang harus aku lakukan jika aku merasa depresi?",
+            "bagaimana cara mengatasi perasaan depresi?"
+        ],
+        "responses": [
+            "Aku memahami perasaan yang kamu alami. Merasa depresi bisa sangat berat, tetapi kamu tidak sendirian. Ada beberapa langkah yang bisa kamu coba untuk mengatasi perasaan depresi, seperti mencari dukungan dari orang terdekat, berbicara dengan seorang profesional, menjaga pola tidur dan makan yang sehat, dan melakukan aktivitas yang memberikan kepuasan dan rasa bahagia. Jika perasaan depresi terus berlanjut atau mengganggu kehidupan sehari-harimu, sangat disarankan untuk mencari bantuan dari tenaga medis atau psikolog. Kamu tidak sendirian dalam perjuangan ini, dan ada sumber daya dan dukungan yang tersedia untuk membantu kamu melalui masa sulit ini."
+        ]
+    },
+    {
+        "tag": "aku jatuh cinta",
+        "patterns": [
+            "aku merasa jatuh cinta pada seseorang",
+            "bagaimana cara mengungkapkan perasaan cinta?",
+            "apa yang harus aku lakukan jika aku jatuh cinta?",
+            "bagaimana cara mengetahui apakah seseorang juga mencintaiku?",
+            "apa yang seharusnya aku persiapkan untuk menjalin hubungan?"
+        ],
+        "responses": [
+            "Jatuh cinta adalah perasaan yang indah. Jika kamu merasa jatuh cinta pada seseorang, penting untuk mempertimbangkan cara yang baik dan bijak untuk mengungkapkan perasaanmu. Komunikasi terbuka dan jujur adalah kunci dalam mengungkapkan cinta. Cobalah untuk mengenal orang tersebut lebih dalam, melalui percakapan yang mendalam dan menghabiskan waktu bersama. Namun, ingatlah bahwa perasaan cinta tidak selalu saling berimbang, dan itu bisa menjadi situasi yang rumit. Jika kamu merasa siap untuk menjalin hubungan, penting untuk menghormati keputusan orang lain dan menjaga kesehatan emosionalmu sendiri. Selalu berkomunikasi dengan jujur dan menghargai perasaan orang lain."
+        ]
+    },
+    {
+        "tag": "aku gila",
+        "patterns": [
+            "aku merasa gila",
+            "apa yang salah dengan pikiranku?",
+            "mengapa aku merasa tidak waras?",
+            "bagaimana cara mengatasi perasaan gila?",
+            "apakah aku membutuhkan bantuan profesional?"
+        ],
+        "responses": [
+            "Aku mendengar perasaanmu dan ingin kamu tahu bahwa kamu tidak sendirian. Merasa gila atau tidak waras bisa sangat menakutkan dan membingungkan. Penting untuk diingat bahwa perasaan ini mungkin merupakan tanda adanya masalah kesehatan mental yang perlu ditangani dengan serius. Aku mendorongmu untuk mencari bantuan dari tenaga medis atau seorang profesional kesehatan mental. Mereka dapat membantu mengevaluasi situasi dan memberikan dukungan serta perawatan yang tepat untukmu. Jangan ragu untuk mencari bantuan, karena ada sumber daya dan individu yang siap membantumu mengatasi perasaan yang kamu alami."
+        ]
+    },
+    {
+        "tag": "aku ingin mati",
+        "patterns": [
+            "aku merasa ingin mati",
+            "hidup terasa berat",
+            "apa yang harus aku lakukan jika aku ingin mati?",
+            "apakah ada harapan untukku?",
+            "aku tidak tahan lagi dengan hidup ini"
+        ],
+        "responses": [
+            "Aku mendengar perasaanmu, dan aku ingin kamu tahu bahwa kamu tidak sendirian. Jika kamu merasa ingin mati atau hidup terasa berat, penting untuk mencari bantuan segera. Kamu tidak perlu menanggung beban ini sendirian. Tolong bicarakan perasaanmu kepada seseorang yang dapat dipercaya, seperti keluarga, teman, atau seorang profesional kesehatan mental. Mereka dapat memberikan dukungan dan bantuan yang kamu butuhkan. Ingatlah bahwa ada harapan dan ada jalan keluar dari perasaan ini. Kamu layak mendapatkan bantuan dan mendapatkan perawatan yang tepat. Jangan ragu untuk mencari bantuan sekarang."
+        ]
+    },
+    {
+        "tag": "aku capek",
+        "patterns": [
+            "aku merasa lelah",
+            "hidupku terasa berat",
+            "apa yang harus aku lakukan? aku merasa capek",
+            "bagaimana cara mengatasi kelelahan?",
+            "apakah ada cara untuk mengembalikan energi?"
+        ],
+        "responses": [
+            "Aku mendengar perasaanmu. Merasa capek dan lelah adalah hal yang wajar terjadi dalam kehidupan yang sibuk dan penuh tantangan. Penting untuk mengambil waktu untuk diri sendiri dan merawat kesehatan fisik serta mental. Cobalah untuk mencari cara untuk melepaskan stres, seperti beristirahat yang cukup, berolahraga, meditasi, atau melakukan aktivitas yang menenangkan. Jangan ragu untuk berbicara dengan orang terdekatmu tentang apa yang sedang kamu alami. Kadang-kadang berbagi beban dengan orang lain dapat membantu meringankan perasaan capek. Jangan lupa memberi dirimu waktu untuk bersantai dan melakukan hal-hal yang kamu nikmati. Kamu pantas mendapatkan istirahat dan perawatan diri yang baik. Ingatlah bahwa perasaan capek adalah sinyal bahwa tubuh dan pikiranmu membutuhkan istirahat dan perhatian lebih."
+        ]
+    },
+    {
+        "tag": "aku diputusin",
+        "patterns": [
+            "aku baru saja diputusin pacar",
+            "sangat sakit hati karena diputusin",
+            "bagaimana cara menghadapi perpisahan?",
+            "apa yang harus aku lakukan setelah diputusin?",
+            "apakah ada cara untuk pulih dari patah hati?"
+        ],
+        "responses": [
+            "Aku mendengar perasaanmu dan aku tahu bahwa perpisahan dan diputusin pacar bisa sangat menyakitkan. Penting untuk memberikan waktu bagi dirimu sendiri untuk menyembuhkan dan merasakan emosi yang sedang kamu alami. Izinkan dirimu untuk merasakan sedih, marah, atau kecewa, karena itu adalah bagian dari proses penyembuhan. Coba untuk berbicara dengan teman atau keluarga yang dapat memberikan dukungan emosional. Jangan ragu untuk mencari bantuan profesional seperti konselor atau terapis jika kamu merasa perlu. Mereka dapat membantu membimbingmu melalui masa sulit ini. Selain itu, berikan perhatian pada dirimu sendiri dan lakukan aktivitas yang kamu nikmati. Saling menjaga dan merawat diri sendiri akan membantu dalam proses pemulihan. Ingatlah bahwa waktunya akan menyembuhkan luka dan ada kemungkinan untuk menemukan kebahagiaan dan cinta yang baru di masa depan."
+        ]
+    },
+    {
+        "tag": "aku bahagia",
+        "patterns": [
+            "aku merasa sangat bahagia",
+            "hidupku penuh kebahagiaan",
+            "apa yang membuatmu bahagia?",
+            "bagaimana cara menikmati hidup dengan bahagia?",
+            "apakah ada tips untuk menjaga kebahagiaan?"
+        ],
+        "responses": [
+            "Senang mendengarnya bahwa kamu merasa bahagia! Kebahagiaan adalah hal yang sangat berharga dalam hidup. Untuk menjaga kebahagiaan, penting untuk memberikan perhatian pada diri sendiri dan menemukan apa yang membuatmu bahagia. Lakukan hal-hal yang kamu sukai, seperti menjalani hobi, menghabiskan waktu bersama orang yang kamu sayangi, atau mengejar impianmu. Jaga keseimbangan antara pekerjaan dan waktu santai. Fokus pada hal-hal positif dalam hidupmu dan bersyukur atas apa yang kamu miliki. Saling memberikan dukungan dan kebaikan kepada orang lain juga dapat meningkatkan kebahagiaanmu. Ingatlah bahwa kebahagiaan adalah perjalanan, bukan tujuan akhir. Nikmati setiap momen dan bersyukurlah atas kebahagiaan yang kamu rasakan!"
+        ]
+    },
+    {
+        "tag": "aku sendiri",
+        "patterns": [
+            "aku merasa kesepian",
+            "apa yang harus aku lakukan ketika aku sendiri?",
+            "sulit bagiku merasa nyaman sendiri",
+            "bagaimana caranya agar aku tidak merasa kesepian?",
+            "apakah ada tips untuk menjaga keseimbangan antara kesendirian dan kehidupan sosial?"
+        ],
+        "responses": [
+            "Saat merasa sendiri, penting untuk memberikan perhatian pada diri sendiri dan mengatasi perasaan kesepian. Coba temukan kegiatan yang kamu nikmati dan yang bisa mengisi waktu luangmu. Melakukan hobi, membaca buku, menulis jurnal, atau menonton film adalah beberapa contoh kegiatan yang dapat membuatmu merasa lebih nyaman. Jangan ragu untuk menjalin hubungan sosial baru dengan orang-orang yang memiliki minat dan hobi serupa. Bergabung dengan klub atau komunitas yang menarik bagi kamu bisa menjadi cara untuk bertemu dengan orang baru dan memperluas jaringan sosial. Selain itu, jangan lupakan pentingnya menjaga keseimbangan antara kesendirian dan kehidupan sosial. Tetaplah terhubung dengan orang-orang terdekat dan luangkan waktu untuk menghabiskan waktu bersama mereka. Ingatlah bahwa merasa sendiri kadang-kadang adalah hal yang alami, namun kamu tetap memiliki kekuatan dan kemampuan untuk menciptakan keseimbangan dan kebahagiaan dalam hidupmu."
+        ]
+    },
+    {
+        "tag": "aku kesepian",
+        "patterns": [
+            "saya merasa sangat kesepian",
+            "sulit bagiku mengatasi perasaan kesepian",
+            "bagaimana caranya agar tidak merasa kesepian?",
+            "apa yang bisa saya lakukan ketika saya kesepian?",
+            "apakah ada cara untuk mengurangi rasa kesepian?"
+        ],
+        "responses": [
+            "Saya memahami perasaan kesepian yang kamu alami. Ketika merasa kesepian, penting untuk mencari cara-cara yang dapat mengatasi perasaan tersebut. Salah satu cara adalah dengan menjalin hubungan sosial yang lebih dekat dengan orang-orang di sekitarmu. Cobalah untuk terbuka dengan teman-teman atau anggota keluarga tentang perasaan kesepian yang kamu alami. Mengajak mereka untuk berkumpul atau menghabiskan waktu bersama dapat membantu mengurangi rasa kesepian. Selain itu, mencari kegiatan yang kamu sukai atau bergabung dengan komunitas yang memiliki minat yang sama juga bisa menjadi cara untuk bertemu dengan orang-orang baru dan mengurangi perasaan kesepian. Ingatlah bahwa kamu tidak sendirian dan selalu ada seseorang yang peduli denganmu. Jangan ragu untuk mencari dukungan dan berbagi perasaan yang kamu alami kepada mereka."
+        ]
+    },
+    {
+        "tag": "aku tidak subur",
+        "patterns": [
+            "saya mengalami masalah kesuburan",
+            "apa yang harus saya lakukan jika merasa mandul?",
+            "bagaimana cara mengatasi perasaan putus asa karena masalah kesuburan?",
+            "adakah saran untuk menghadapi kenyataan bahwa saya mandul?",
+            "apa saja langkah yang bisa diambil jika ingin memiliki anak tapi mandul?"
+        ],
+        "responses": [
+            "Saya mengerti bahwa masalah kesuburan dan merasa mandul bisa sangat menantang secara emosional. Penting untuk diingat bahwa kesuburan adalah masalah kompleks dan dapat melibatkan berbagai faktor. Jika kamu mengalami masalah kesuburan, ada beberapa langkah yang bisa kamu lakukan. Pertama, berkonsultasilah dengan dokter spesialis kandungan atau dokter kesuburan untuk mengevaluasi kondisi dan mendapatkan saran yang tepat. Mereka dapat membantu menentukan penyebab masalah kesuburan dan memberikan opsi pengobatan atau prosedur medis yang sesuai. Selain itu, penting juga untuk menjaga kesehatan fisik dan mental secara menyeluruh. Ini meliputi menjaga pola makan yang seimbang, berolahraga teratur, mengelola stres, dan mendapatkan dukungan emosional dari pasangan, keluarga, atau kelompok dukungan. Terakhir, ingatlah bahwa menjadi orangtua bukanlah satu-satunya bentuk kebahagiaan dan makna hidup. Ada banyak cara untuk meraih kebahagiaan dan kepuasan dalam kehidupan, terlepas dari masalah kesuburan. Jangan ragu untuk mencari bantuan dan dukungan yang kamu butuhkan selama proses ini."
+        ]
+    },
+    {
+        "tag": "aku sebel",
+        "patterns": [
+          "Aduh, aku jadi sebel!",
+          "Gimana sih, aku udah sebel banget!",
+          "Kenapa selalu begini? Aku sebel!"
+        ],
+        "responses": [
+          "Santai saja, cobalah untuk tenang dan cari jalan keluar yang baik. Semoga semuanya bisa lebih baik."
+        ]
+      }
+
+    
     ]
 }
