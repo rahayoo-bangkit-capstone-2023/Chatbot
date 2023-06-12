@@ -1,17 +1,6 @@
 {
     "intents": [
-
-        {
-            "tag": "google",
-            "patterns": [
-                "google",
-                "search",
-                "internet"
-            ],
-            "responses": [
-                "Redirecting to Google..."
-            ]
-        },
+        
         {
             "tag": "greeting",
             "patterns": [
@@ -77,7 +66,8 @@
             "responses": [
                 "Sorry, can't understand you",
                 "Please give me more info",
-                "Not sure I understand"
+                "Not sure I understand", "Sorry, can you please provide more context?",
+                "I'm having trouble understanding. Can you provide additional information or rephrase your sentences?"
             ],
             "context": [
                 ""
@@ -131,20 +121,7 @@
                 "what are you"
             ],
             "responses": [
-                "I am Ted, a Deep-Learning chatbot"
-            ]
-        },
-        {
-            "tag": "datetime",
-            "patterns": [
-                "What is the time",
-                "what is the date",
-                "date",
-                "time",
-                "tell me the date","day","what day is is today"
-            ],
-            "responses": [
-                "Date and Time"
+                "I am Rahayoo, a Deep-Learning chatbot"
             ]
         },
         {
@@ -173,17 +150,6 @@
             ]
         },
         {
-            "tag": "programmer",
-            "patterns": [
-                "Who made you",
-                "who designed you",
-                "who programmed you"
-            ],
-            "responses": [
-                "I was made by Karan Malik."
-            ]
-        },
-        {
             "tag": "insult",
             "patterns": [
                 
@@ -193,7 +159,7 @@
                 "idiot"
             ],
             "responses": [
-                "Well that hurts :("
+                "Well that hurts :(", "Did I make you mad?"
             ]
         },
         {
@@ -217,42 +183,6 @@
             ],
             "responses": [
                 "Yeah!"
-            ]
-        },
-        
-        {
-            "tag": "weather",
-            "patterns": [
-                "temperature",
-                "weather",
-                "how hot is it"
-            ],
-            "responses": [
-                "..."
-            ]
-        },
-        {
-            "tag": "karan",
-            "patterns": [
-                "who is he",
-                "who is that",
-                "who is karan",
-                "karan malik"
-            ],
-            "responses": [
-                "Head over to his any of his social profiles to find out! Linkedin: www.linkedin.com/in/karan-malik-3a39191a7 Github: https://github.com/Karan-Malik"
-            ]
-        },
-        {
-            "tag": "contact",
-            "patterns": [
-                "contact developer",
-                "contact karan",
-                "contact programmer",
-                "contact creator"
-            ],
-            "responses": [
-                "You can contact my creator at his Linkedin profile : www.linkedin.com/in/karan-malik-3a39191a7"
             ]
         },
         {
@@ -288,51 +218,6 @@
             ]
         },
         {
-            "tag": "news",
-            "patterns": [
-                "news",
-                "latest news",
-                "india news"
-            ],
-            "responses": [
-                "..."
-            ]
-        },
-        {
-            "tag": "inspire",
-            "patterns": [
-                "who inspires you",
-                "who is your inspiration",
-                "who motivates you"
-            ],
-            "responses": [
-                "Personally, I find Karan very inspiring. I might not be very fair though.."
-            ]
-        },
-        {
-            "tag": "cricket",
-            "patterns": [
-                "current cricket matches",
-                "cricket score"
-            ],
-            "responses": [
-                "..."
-            ]
-        },
-        {
-            "tag": "song",
-            "patterns": [
-                "top songs",
-                "best songs",
-                "hot songs",
-                " top 10 songs",
-                "top ten songs"
-            ],
-            "responses": [
-                "..."
-            ]
-        },
-        {
             "tag": "great-reply",
             "patterns": [
                 "i am good", "I had the opportunity to learn something new today.",
@@ -364,6 +249,21 @@
             ]
         },
         {
+            "tag": "no-reply",
+            "patterns": [
+                "No, I think I've shared everything I wanted to.",
+                "No, I've covered all the important aspects.",
+                "No, there's nothing more to add at the moment" 
+            ],
+            "responses": [
+                "If you want to end our discussion, you can simply say 'done'.",
+                "Feel free to let me know if you'd like to conclude our conversation by saying 'done'.",
+                "When you're ready to wrap up our chat, just say 'done' and we can finish here.",
+                "If you feel like ending our conversation, a simple 'done' will signal that you're finished.",
+                "Whenever you're ready to conclude our dialogue, you can let me know by saying 'done'."
+            ]
+        },
+        {
             "tag": "tough-reply",
             "patterns": [
                 "It was a really tough day.", "Things didn't go well at all.",
@@ -379,33 +279,7 @@
                 "Take some time for yourself to relax and unwind. Do you wanna talk about it?"
             ]
         },
-        {
-            "tag": "timer",
-            "patterns": [
-                "set a timer"
-            ],
-            "responses": [
-                "..."
-            ]
-        },
-        {
-            "tag": "covid19",
-            "patterns": [
-                "covid 19 "
-            ],
-            "responses": [
-                "..."
-            ]
-        },
-        {
-            "tag": "suggest",
-            "patterns": [
-                "you are useless","useless","suggest","suggestions","you are bad"
-            ],
-            "responses": [
-                "Please mail your suggestions to ted.thedlbot.suggestions@gmail.com. Thank you for helping me improve!"
-            ]
-        },
+        
             {"tag": "riddle",
             "patterns": [
                 "Ask me a riddle",
@@ -577,6 +451,104 @@
             "Spending time in nature and practising mindfulness exercises can be beneficial for managing burnout. It's important to prioritize self-care and give yourself permission to take breaks."
         ]
     },
+    {
+        "tag": "far-from-family",
+        "patterns": [
+        "I feel lonely being far away from my family due to work.",
+        "Being away from family because of work is difficult.",
+        "I miss my family a lot since I moved away for work.",
+        "It's challenging being far from family while focusing on work.",
+        "The distance from my family due to work is affecting me emotionally.",
+        "I wish I could be closer to my family while pursuing my career.",
+        "Balancing work and being far from family is tough."
+        ],
+        "responses": [
+        "I understand how difficult it can be to be away from your family. Have you tried scheduling regular video calls or planning visits whenever possible to stay connected?",
+        "Being far from family can be tough, but remember that you're doing your best to build a better future for yourself and your loved ones. Have you tried finding local support groups or communities to help cope with the distance?",
+        "It's normal to miss your family when you're far away for work. Have you considered discussing your feelings with a close friend or a counselor to help you navigate through this challenging situation?",
+        "Finding a balance between work and family can be challenging, especially when you're far away. Have you explored flexible work arrangements or considered discussing the possibility of relocation with your employer?",
+        "Taking care of your emotional well-being is crucial while being far from family. Have you tried engaging in hobbies, self-care activities, or joining social groups to meet new people and build a support system?",
+        "It's important to find ways to stay connected with your family despite the distance. Have you tried planning virtual family events to maintain that sense of togetherness?",
+        "Remember that your hard work and sacrifices are for the well-being of your family. Stay positive and make the most out of the time you do have together. Sending you virtual support and encouragement!"
+        ]
+    },
+    {
+        "tag": "far-from-family-responses",
+        "patterns": [
+        "I haven't tried scheduling regular video calls or planning visits, but I will consider doing so.",
+        "I haven't explored finding local support groups or communities, but that sounds like a good idea.",
+        "I haven't discussed my feelings with a close friend or a counselor, but I will consider seeking their support.",
+        "I haven't explored flexible work arrangements or discussed relocation, but I will look into it.",
+        "I haven't engaged in hobbies, self-care activities, or joined social groups yet, but I will give it a try.",
+        "I haven't planned virtual family events, but I will definitely consider doing that.",
+        "I hang out with my friend to kill boredom and because I do not want to be lonely because I'm far from family"
+        ],
+        "responses": [
+        "That's great to hear! Regular video calls and visits can help you stay connected and bridge the distance with your family. It's important to prioritize maintaining those relationships.",
+        "Finding support from local communities or support groups can provide a sense of belonging and understanding. It can make the distance from your family more manageable. Give it a try!",
+        "Discussing your feelings with someone you trust, like a close friend or a counselor, can offer valuable support and guidance. They can help you navigate through the challenges of being far from family.",
+        "Exploring flexible work arrangements or discussing the possibility of relocation with your employer can help you find a better balance between work and family. It's worth considering as it may bring you closer to your loved ones.",
+        "Engaging in hobbies, self-care activities, and joining social groups can help you meet new people, build a support system, and take care of your emotional well-being while being far from family.",
+        "Planning virtual family events can create opportunities for shared experiences and maintain a sense of togetherness despite the physical distance. It's a great way to stay connected with your family.",
+        "Spending time with friends is a great way to combat boredom and alleviate loneliness. It's wonderful that you have someone to hang out with!",
+        "It's great that you have friends to hang out with. Keeping yourself engaged and connected with others can help ease the feelings of loneliness and boredom when you're far from family.",
+        "Finding ways to enjoy your time and connect with friends is a smart strategy for combating boredom and the challenges of being away from family. Keep nurturing those friendships!"
+        ]
+    },
+    {
+        "tag": "family-doesnt-support",
+        "patterns": [
+          "My family doesn't support my current job and it's been challenging.",
+          "I'm facing difficulty because my family doesn't approve of my career choice.",
+          "I feel discouraged because my family doesn't believe in my current job.",
+          "I'm struggling with the lack of support from my family regarding my profession.",
+          "It's tough when your own family doesn't back you up in your chosen career.",
+          "I'm feeling frustrated because my family doesn't understand or support my job.",
+          "Dealing with the lack of support from my family regarding my current job has been difficult."
+        ],
+        "responses": [
+        "It can be challenging when your family doesn't support your career choice. Have you tried having an open and honest conversation with them to understand their concerns?",
+        "Family support is important, but it's not always guaranteed. Have you considered seeking advice from mentors or professionals in your field who can provide guidance?",
+        "It can be disheartening when your family doesn't support your job. Have you tried sharing your passion for your work and explaining how it aligns with your personal goals?",
+        "Family support can greatly influence our motivation and confidence. Have you explored sharing success stories or examples of others who have found fulfillment in similar careers?",
+        "Sometimes, family members may have concerns based on misconceptions. Have you tried providing them with more information about your job and its potential for growth and success?"
+        ]
+    },
+    {
+        "tag": "family-doesnt-support-responses",
+        "patterns": [
+        "Actually, I have. But it seems they still don't understand what I'm pursuing.",
+        "I've tried having open and honest conversations with them, but it's challenging to make them understand my career choice.",
+        "Having an open and honest conversation with them didn't change their perspective on my career choice.",
+        "I haven't sought advice from professionals in my field yet. Maybe that's something worth considering.",
+        "No, I haven't reached out to mentors or professionals for guidance. I'll keep that option in mind.",
+        "I haven't explored seeking advice from mentors or professionals. It could be helpful in gaining clarity and support.",
+        "I've tried sharing my passion and explaining how it aligns with my personal goals, but it hasn't changed their perspective.",
+        "Yes, I've shared my passion and how it aligns with my personal goals, but they still don't see it the way I do.",
+        "I've explained my passion and its alignment with my personal goals, but they struggle to understand its significance.",
+        "I've shared success stories and examples, but it hasn't convinced them to be more supportive of my career choice.",
+        "Yes, I've tried sharing success stories and examples, but unfortunately, it didn't change their perspective.",
+        "I've presented success stories and examples of others who have thrived in similar careers, but they still don't see it as a valid choice.",
+        "I've provided them with more information about my job and its potential for growth and success, but they remain unconvinced.",
+        "Yes, I've given them more information about my job and its potential, but they still don't see it as a viable career path.",
+        "I've offered additional details about my job and its potential, but it hasn't changed their perception or support."
+        ],
+        "responses": [
+        "It can be challenging when your family doesn't support your career choice. Remember to stay true to yourself and your aspirations.",
+        "Don't let their lack of understanding discourage you. Stay focused on your goals and surround yourself with supportive peers.",
+        "It's disheartening when our loved ones don't fully comprehend our career choices. Keep pursuing what makes you happy and fulfilled.",
+        "Finding external guidance from professionals or mentors in your field can provide valuable insights and support for your career journey.",
+        "Seeking advice from professionals or mentors can help you gain a fresh perspective and navigate through the challenges you face.",
+        "Explaining your passion and goals to your family can be a continuous process. Keep trying to bridge the gap and share your vision with them.",
+        "Sharing success stories and examples can be a powerful way to illustrate the potential and opportunities in your chosen career path.",
+        "Remember, you have the right to pursue a career that aligns with your passions and goals, regardless of others' opinions.",
+        "Continue to provide them with more information about your job and its potential. Sometimes, it takes time for them to understand and support your choices.",
+        "Your family's understanding and support may evolve over time. Stay patient and keep demonstrating your dedication and happiness in your career.",
+        "Even if they don't fully support your career choice, remember that your happiness and fulfillment matter the most in the end.",
+        "Stay strong and believe in yourself. Surround yourself with a supportive network that understands and encourages your career aspirations.",
+        "Don't let their lack of support deter you from pursuing your dreams. Focus on building a fulfilling career and finding happiness in your work."
+        ]
+    },
     {"tag": "drained",
         "patterns": [
             "I often feel drained and unhappy after work.", 
@@ -594,6 +566,61 @@
             "Have you talked to anyone about what you're going through? Sometimes sharing your burdens can help lighten the load.",
             "I'm sorry to hear that. It sounds like you're going through a really tough time. Would you like to talk about what's been going on?",
             "I can only imagine how overwhelming that must be."
+        ]
+    },
+    {
+        "tag": "activities-to-relax",
+        "patterns": [
+        "I enjoy taking long walks in nature to relax and clear my mind",
+        "Engaging in yoga and meditation helps me unwind and relieve stress",
+        "Reading a good book or watching a movie helps me relax and escape from work",
+        "I find painting or engaging in other creative hobbies therapeutic and relaxing",
+        "Spending quality time with loved ones and engaging in social activities helps me recharge"
+        ],
+        "responses": [
+        "Taking long walks in nature can be a great way to relax and rejuvenate. It allows you to disconnect from work and enjoy the beauty of the outdoors. I wish that after engaging in activities you enjoy, you won't feel drained anymore.",
+        "Yoga and meditation are wonderful practices to promote relaxation and reduce stress. They provide a sense of calmness and help in finding balance. It would be great if taking time for relaxation could help you feel less drained and relieve stress.",
+        "Reading a good book or watching a movie can transport you to a different world and provide a much-needed break from work. I wish that finding moments for yourself and engaging in activities you love would recharge you and reduce the drain",
+        "Engaging in creative hobbies like painting can be a great way to unwind and express yourself. Have you set aside dedicated time for your creative pursuits?",
+        "Spending quality time with loved ones and engaging in social activities can provide a sense of joy and support. I hope that by taking breaks and doing things you enjoy, you can overcome the constant feeling of being drained."
+        ]
+    },
+    {
+        "tag": "feeling-drained-reasons",
+        "patterns": [
+        "I feel drained because there is too much workload, so I always work overtime",
+        "There are too many things to do. Actually, it's not a hard task, but I've been doing it for a long time",
+        "The constant pressure and high expectations from my work leave me feeling drained",
+        "I often struggle with work-life balance, and it takes a toll on my energy levels",
+        "I feel drained because I rarely take breaks or time for myself",
+        "The lack of recognition or appreciation for my efforts makes me feel drained",
+        "I have difficulty saying no to additional tasks, which results in an overwhelming workload"
+        ],
+        "responses": [
+        "I can understand why you would feel drained with such a heavy workload and overtime. It's important to take breaks and set boundaries to avoid burnout. Remember to prioritize your well-being and seek support if needed.",
+        "It can be exhausting to have a long list of tasks, even if they're not particularly challenging. Consider finding ways to break up the monotony and inject some variety into your work routine. Remember to take care of yourself and find moments for relaxation.",
+        "Feeling drained due to work pressure and high expectations is a common experience. Remember to communicate your concerns and workload with your team or manager to explore possible solutions. Prioritizing self-care and setting realistic expectations can also help alleviate the drain.",
+        "Balancing work and personal life can be a constant struggle, leading to feeling drained. It's important to establish boundaries and make time for self-care activities that replenish your energy. Seek support from colleagues or mentors who can provide guidance on achieving a healthier work-life balance.",
+        "Not taking breaks or time for yourself can contribute to feeling drained. Remember that taking regular breaks and engaging in activities you enjoy can actually enhance your productivity and well-being. It's important to prioritize self-care as part of your routine.",
+        "Feeling drained due to a lack of recognition or appreciation for your efforts is disheartening. Consider discussing your concerns with your supervisor or seeking feedback to ensure your contributions are acknowledged. Remember that your well-being matters, and seeking support is important.",
+        "Having difficulty saying no to additional tasks can lead to feeling overwhelmed and drained. It's important to set boundaries and communicate your workload capacity with your team. Learning to prioritize and delegate tasks can also help alleviate the drain."
+        ]
+    },
+    {
+        "tag": "activities-to-relax-response",
+        "patterns": [
+        "I haven't. Because I have so many things to do",
+        "Unfortunately, I haven't had much time for activities outside of work",
+        "I wish I could engage in activities that help me relax, but my workload has been overwhelming",
+        "I haven't considered it yet. I feel like I'm constantly playing catch-up with my tasks",
+        "Relaxing activities have been on the backburner for me due to my busy schedule"
+        ],
+        "responses": [
+        "It's understandable that your workload keeps you occupied. However, taking breaks and engaging in activities you enjoy can actually improve your productivity and well-being.",
+        "Finding time for relaxation can be challenging, especially when work demands are high. Consider scheduling short breaks throughout the day to recharge and engage in quick activities that bring you joy.",
+        "It's important to prioritize self-care, even during busy times. Perhaps you can start by dedicating a few minutes each day to a simple activity that helps you relax, like listening to calming music or practicing deep breathing exercises.",
+        "While it may seem difficult to find time for relaxation, remember that taking care of yourself is essential for long-term success. Consider exploring ways to delegate or streamline your tasks, allowing you to carve out time for activities that bring you joy.",
+        "It's unfortunate that you haven't had much time for activities outside of work. Remember that self-care is crucial for maintaining your well-being. Consider reaching out to your supervisor or team to discuss workload distribution and find ways to create a better work-life balance."
         ]
     },
     {"tag": "make-mistakes",
@@ -614,6 +641,22 @@
             "That's tough. It's important to remember that we all make mistakes and that a healthy work environment should allow for growth and learning from those mistakes."            
         ]
     },
+    {
+        "tag": "reasons-behind-making-mistakes",
+        "patterns": [
+        "There was a miscommunication with my team, and it caused delays in the project.",
+        "I made a mistake in the code, and it resulted in errors.",
+        "I had a disagreement with a colleague, and it affected our collaboration.",
+        "I underestimated the complexity of a task, and it took longer than expected.",
+        "I received negative feedback from a client, and it affected my confidence."
+        ],
+        "responses": [
+        "I'm sorry to hear that. Miscommunications can happen, but it's important to address them and find ways to prevent future occurrences.",
+        "Mistakes are a part of the learning process. It's great that you recognize it and are willing to improve.",
+        "Disagreements can sometimes arise in a work environment. It's important to find a resolution and maintain a healthy working relationship.",
+        "Receiving negative feedback can be disheartening, but it's an opportunity to learn and grow."
+        ]
+    },        
     {"tag": "self-improvement",
         "patterns": [
             "I want to improve myself but don't know where to start.",
@@ -649,6 +692,23 @@
             "Misunderstandings due to unclear emails can be problematic. Have you considered requesting clarifications or suggesting improvements to communication practices?",
             "Lack of feedback can hinder your professional growth. Have you tried scheduling a meeting with your manager to discuss this?",
             "Effective communication is vital in the workplace, and it's essential to address these issues for better collaboration and productivity."            
+        ]
+    },
+    {
+        "tag": "poor-communication-responses",
+        "patterns": [
+        "I haven't talked to my colleague about it yet. I'm not sure how to approach the conversation.",
+        "I did bring up the issue with my manager, but it hasn't been fully resolved.",
+        "I haven't discussed it with my team or supervisor because I'm afraid it might create tension.",
+        "I haven't requested clarifications or suggested improvements because I don't want to come across as critical.",
+        "I haven't scheduled a meeting with my manager yet because I'm not sure how to address the lack of feedback."
+        ],
+        "responses": [
+        "It's understandable to feel unsure about approaching the conversation. Perhaps you can start by expressing your concerns in a respectful and constructive manner. Your colleague may also appreciate your willingness to address the issue and find a solution together.",
+        "Resolving issues through communication is important, but it can take time. It might be helpful to follow up with your manager to ensure that the matter is still being addressed. Open communication can lead to a better understanding and potential solutions.",
+        "Creating an open dialogue within your team is crucial for a positive work environment. It may be worth considering discussing your feelings with your team or supervisor. They may not be aware of how you're feeling, and together you can find ways to improve the situation.",
+        "Improving communication practices benefits everyone involved. If you feel that unclear emails are causing misunderstandings, consider suggesting specific improvements or seeking clarification when needed. This can help enhance communication efficiency and minimize misunderstandings.",
+        "Feedback is essential for professional growth. If you haven't received feedback, it's important to express your desire for growth and development. Requesting a meeting with your manager can create an opportunity to discuss your goals, seek feedback, and explore areas for improvement."
         ]
     },
     {"tag": "missing-deadlines",
@@ -698,6 +758,23 @@
             "Requesting regular check-ins with your superiors can provide the opportunity for guidance and progress discussions."
         ]
     },
+    {
+        "tag": "feedback-responses",
+        "patterns": [
+          "I haven't scheduled a meeting with my superiors yet. I'm not sure how they would react to my concerns.",
+          "I did try scheduling a meeting, but it got postponed multiple times.",
+          "I haven't brought up my concerns with my superiors because I'm afraid it might affect my professional relationship.",
+          "I haven't had the opportunity to schedule a meeting with my superiors due to their busy schedules.",
+          "I haven't felt comfortable discussing my concerns with my superiors, as I worry it might be perceived as complaining."
+        ],
+        "responses": [
+          "It's natural to feel unsure about how your superiors might react, but expressing your concerns in a professional and respectful manner can lead to constructive discussions. It's worth considering scheduling a meeting to address your concerns and seek their guidance and support.",
+          "Sometimes scheduling conflicts can arise, causing delays in meetings. If your meeting has been postponed multiple times, it might be helpful to follow up and express the importance of discussing your concerns. Open communication can help prioritize the meeting.",
+          "Open and honest communication is vital for a healthy work environment. While it's normal to have concerns, it's important to create a safe space to address them. Consider discussing your concerns with your superiors in a constructive manner, emphasizing your desire for growth and improvement.",
+          "Busy schedules can make it challenging to find the right time for a meeting. If you haven't had the opportunity to schedule one, you can consider sending a polite email or requesting a brief discussion to express your concerns. Your superiors may appreciate your proactive approach.",
+          "It's understandable to be hesitant about discussing concerns with your superiors. However, it's important to remember that open communication is key to addressing issues and fostering a positive work environment. You can start by expressing your desire for growth and seeking their guidance to address your concerns."
+        ]
+    },
     {"tag": "feedback-colleagues",
         "patterns": [
             "I would like feedback from both my superiors and colleagues to enhance my work.",
@@ -732,6 +809,23 @@
             "Burnout is a serious concern. It's crucial to take care of your well-being. Have you discussed your workload and stress levels with your supervisor?"
         ]
     },
+    {
+        "tag": "feeling-overwhelmed-prioritization-responses",
+        "patterns": [
+          "I haven't tried breaking down my tasks and creating a prioritization plan yet. It feels overwhelming to even think about it.",
+          "I've attempted to break down my tasks and prioritize them, but I struggle to stick to the plan.",
+          "I haven't considered breaking down my tasks and creating a prioritization plan because I'm not sure where to start.",
+          "I find it challenging to break down my tasks and prioritize them because they all seem equally important and urgent.",
+          "I haven't thought about creating a prioritization plan because I worry it might take too much time and effort."
+        ],
+        "responses": [
+          "Breaking down your tasks and creating a prioritization plan can help you regain a sense of control and manage your workload more effectively. It may feel overwhelming at first, but taking small steps and focusing on one task at a time can make it more manageable.",
+          "Creating a prioritization plan is a great strategy to optimize your productivity and reduce overwhelm. If you struggle to stick to the plan, try breaking your tasks into smaller, more achievable milestones and celebrate your progress along the way.",
+          "Starting can be the hardest part, but breaking down your tasks and prioritizing them is a valuable practice. Consider starting with the most urgent or important tasks and gradually working through the rest. Don't hesitate to seek support or guidance from your team or supervisor if needed.",
+          "It's normal to feel unsure about where to start when breaking down tasks and creating a prioritization plan. Begin by assessing the urgency and importance of each task, and then allocate your time accordingly. Remember, even small steps can make a significant difference in managing your workload.",
+          "While it's true that creating a prioritization plan requires some time and effort upfront, it can save you time and reduce stress in the long run. Breaking down tasks and prioritizing them allows you to focus on what truly matters and ensures you're making progress on the most important tasks."
+        ]
+    },
     {"tag": "technical-issues",
         "patterns": [
             "I faced technical issue",
@@ -749,6 +843,23 @@
             "Unreliable network connectivity can impact your productivity. Communicate the issue to your IT support team and explore possible solutions or workarounds."
         ]
     },
+    {
+        "tag": "technical-issues-responses",
+        "patterns": [
+        "I haven't reached out to the IT support team yet. I'm not sure if they can help with this particular issue.",
+        "I've tried troubleshooting the problem on my own, but I haven't thought about contacting the IT support team.",
+        "I'm hesitant to reach out to the IT department because I'm afraid they might not be able to resolve the issue.",
+        "I haven't considered consulting with technical experts because I thought I could figure it out on my own.",
+        "I'm not sure if contacting the IT support team is worth it. I feel like I've already spent a lot of time trying to fix the problem myself."
+        ],
+        "responses": [
+        "Reaching out to the IT support team is a wise decision when facing technical issues. They have the expertise and resources to assist you. Don't hesitate to explain the problem in detail and provide any relevant information to help them resolve the issue.",
+        "Consulting with your IT department or seeking assistance from technical experts can save you time and frustration. They have the knowledge and experience to troubleshoot complex problems. Remember, asking for help is a sign of resourcefulness, not weakness.",
+        "The IT support team is there to help you with technical challenges. Don't hesitate to reach out to them, as they have the skills and tools to diagnose and resolve the issue. Providing clear information about the problem will aid them in finding a solution more efficiently.",
+        "While it's understandable to want to solve technical issues independently, sometimes seeking assistance is the best course of action. IT departments and technical experts are trained to handle complex problems. They can offer valuable insights and solutions you may not have considered.",
+        "Don't hesitate to contact the IT support team even if you've spent time troubleshooting the issue yourself. They are equipped to handle various technical challenges and may have additional resources or insights to help resolve the problem."
+        ]
+    },
     {"tag": "lack-of-teamwork",
         "patterns": [
             "There is lack of teamwork", "There is lack of collaboration",
@@ -764,6 +875,22 @@
             "Facing challenges due to lack of coordination is common. It may be helpful to address this issue during team meetings and explore ways to improve communication and teamwork.",
             "Working in silos can hinder overall productivity. Consider suggesting cross-functional projects or initiatives that promote collaboration and shared goals.",
             "Building rapport and effective communication takes time. Consider reaching out to your team members individually to establish connections and foster better teamwork."
+        ]
+    },
+    {"tag": "lack-of-teamwork-responses",
+        "patterns": [
+            "Yes, I have. I organized a team-building event last month, and it helped improve communication and collaboration among team members.",
+            "I've suggested regular team meetings to discuss project updates and encourage collaboration, but it hasn't been implemented yet.",
+            "Unfortunately, I haven't had the opportunity to initiate team-building activities or suggest regular team meetings. I'm still exploring ways to address the lack of teamwork.",
+            "I haven't tried initiating team-building activities or suggesting regular team meetings yet. However, I'm considering proposing these ideas to my team to enhance collaboration.",
+            "I've noticed the lack of teamwork and have been thinking about organizing team-building activities or suggesting regular meetings. I'm gathering more information and ideas before taking action."
+        ],
+        "responses": [
+            "That's great to hear! Team-building activities and regular meetings can significantly improve teamwork and collaboration. Keep up the good work!",
+            "Initiating team-building activities and suggesting regular team meetings are proactive steps to address the lack of teamwork. I hope your efforts lead to positive changes in the team dynamics.",
+            "I understand it can be challenging when your suggestions are not implemented immediately. Don't lose hope, and continue advocating for teamwork. Your persistence will make a difference.",
+            "Exploring ways to address the lack of teamwork is a positive approach. When you feel ready, take the initiative and propose your ideas. Your efforts can make a positive impact on the team's dynamics.",
+            "Taking the time to gather information and ideas shows your commitment to improving teamwork. Once you're ready, I encourage you to take action and implement those suggestions. Best of luck!"
         ]
     },
     {"tag": "unsupportive-work-environment",
@@ -784,6 +911,32 @@
             "Lack of collaboration and teamwork can hinder progress. Have you tried initiating discussions or suggesting team-building activities to foster a more supportive work environment?"
         ]
     },
+    {"tag": "unsupportive-work-environment-responses",
+        "patterns": [
+            "Yes, I've spoken with my supervisor about my concerns, but the support hasn't improved. I'm considering reaching out to the HR department for further assistance.",
+            "I haven't discussed my concerns with my supervisor or HR department yet. I'm hesitant but open to exploring that option if the lack of support persists.",
+            "Unfortunately, I haven't had the chance to discuss my concerns with anyone in the company. I'm unsure how receptive they would be, but I'm considering it as a possible solution."
+        ],
+        "responses": [
+            "Taking the step to discuss your concerns with your supervisor or HR department is crucial. They may have insights or solutions to address the lack of support. Don't hesitate to seek their guidance.",
+            "I understand the hesitation, but discussing your concerns with your supervisor or HR department can be beneficial. They may be unaware of the issue and can work towards improving the support you receive.",
+            "It's commendable that you've taken the initiative to discuss your concerns with your supervisor. If the support hasn't improved, contacting the HR department can provide additional avenues for resolution."
+        ]
+    },
+    {"tag": "team-activities-for-unsupportive-work-environment",
+    "patterns": [
+        "Yes, I've tried suggesting team-building activities, but my colleagues seem disinterested. It's been challenging to foster a more collaborative work environment.",
+        "I haven't had the opportunity to initiate discussions or suggest team-building activities. I'm unsure how receptive my team would be, but I'm open to exploring that approach.",
+        "Despite my efforts to initiate discussions and suggest team-building activities, there hasn't been much progress in fostering a more supportive work environment."
+    ],
+    "responses": [
+        "It's unfortunate that your suggestions for team-building activities haven't been met with enthusiasm. Building a collaborative work environment can take time and persistence. Keep exploring different approaches and continue to encourage teamwork.",
+        "Initiating discussions and suggesting team-building activities are great steps towards fostering collaboration. Even if the progress has been slow, don't give up. Consistent efforts can gradually create a more supportive work environment.",
+        "Fostering teamwork and collaboration requires active participation from everyone. Although your efforts haven't yielded significant changes yet, continue to emphasize the importance of collaboration and encourage your team members to get involved.",
+        "I understand that it can be disheartening when your attempts to foster a more supportive work environment face resistance. Keep initiating discussions and suggesting team-building activities, and consider involving your supervisor or team leader for additional support and guidance.",
+        "Lack of collaboration can be challenging, but your proactive approach of initiating discussions and suggesting team-building activities is commendable. Stay persistent and keep exploring different strategies to encourage a more collaborative work environment."
+    ]
+},
     {"tag": "toxic-work-environment",
         "patterns": [
             "I'm dealing with a toxic work environment that is affecting my well-being.",
@@ -1048,6 +1201,158 @@
         ]
     },
     {
+        "tag": "insufficient-training",
+        "patterns": [
+            "I feel like I haven't received sufficient training.",
+            "I'm facing difficulties due to the lack of adequate training.",
+            "I need more guidance and training in programming.",
+            "The lack of training makes me feel behind in understanding the task.",
+            "I would like to have more opportunities for training."
+        ],
+        "responses": [
+            "I understand the importance of receiving adequate training in programming. Have you expressed your concerns to your supervisor or team?",
+            "Insufficient training can be a significant challenge in professional growth. Have you considered exploring other options, such as seeking online learning resources or taking programming courses outside of work hours?",
+            "It's completely understandable to feel behind if you haven't received sufficient training. Is there a possibility to discuss your training needs with your manager and explore potential solutions together?",
+            "Lack of training can indeed hinder progress. Have you considered reaching out to your colleagues or seeking mentorship opportunities within the community to supplement your training?",
+            "I hear you. It can be frustrating to feel unsupported in terms of training. Is there a budget or resources available within your organization for professional development or external training programs?"
+        ]
+    },
+    {
+        "tag": "schedule-inflexibility",
+        "patterns": [
+            "I'm struggling with the inflexibility of my work schedule.",
+            "The rigid schedule is making it challenging for me to manage my tasks.",
+            "I wish there was more flexibility in my work schedule.",
+            "The fixed working hours are not ideal for handling projects efficiently.",
+            "I find it difficult to balance my personal commitments with the inflexible schedule."
+        ],
+        "responses": [
+            "Oh no, I'm sorry to hear that. I understand how important schedule flexibility can be. Have you discussed your concerns with your supervisor or HR department?",
+            "Having a flexible work schedule can greatly improve productivity and work-life balance. Is there a possibility of negotiating a more flexible arrangement with your employer?",
+            "It can be challenging to manage tasks within a rigid schedule. Are there any opportunities to explore remote work options or flextime arrangements?",
+            "Finding a balance between personal commitments and work can be tough with an inflexible schedule. Have you considered discussing this issue with your team to explore potential solutions?",
+            "Schedule inflexibility can indeed affect your efficiency. Is there a possibility to discuss alternative scheduling options, such as compressed workweeks or adjustable start and end times?"
+        ]
+    },
+    {
+        "tag": "remote-work",
+        "patterns": [
+            "I enjoy the flexibility of remote work as a coder.",
+            "Working remotely allows me to be more productive.",
+            "I appreciate the convenience of remote work in this field.",
+            "Remote work has helped me achieve a better work-life balance.",
+            "I find remote work to be beneficial for focusing on tasks."
+        ],
+        "responses": [
+            "That's great to hear! Remote work can provide increased flexibility and productivity. How has remote work specifically helped you in your projects?",
+            "Remote work can indeed offer advantages. Have you faced any challenges while working remotely?",
+            "Remote work can be a great way to achieve a better work-life balance. What specific strategies do you employ to maintain a healthy work-life integration?",
+            "It's good to know that remote work has been beneficial for your tasks. How do you ensure effective communication and collaboration with your team while working remotely?",
+            "Remote work can provide a conducive environment for focusing on tasks. Have you found any specific tools or techniques that have helped you stay organized and productive while working remotely?"
+        ]
+    },
+    {
+        "tag": "remote-work-benefits",
+        "patterns": [
+            "Remote work has allowed me to create a personalized work environment where I can focus without distractions. I have set up a dedicated home office space with all the necessary equipment and tools, which has significantly improved my productivity and concentration.",
+            "Remote work has given me the flexibility to manage my time more efficiently. I can optimize my schedule to work during my most productive hours, which has resulted in better quality work and faster completion of tasks.",
+            "Remote work has opened up opportunities for me to collaborate with talent from around the world. I can work with developers and experts from different time zones, allowing us to take advantage of diverse perspectives and work on projects more effectively.",
+            "I can optimize my schedule to work during my most productive hours.",
+            "Remote work has opened up opportunities for collaboration with talent from around the world.",
+            "Working with developers and experts from different time zones has been advantageous."
+        ],
+        "responses": [
+            "That's fantastic! Creating a personalized work environment is important for productivity and focus. Keep up the good work!",
+            "That's great to hear! Having a dedicated home office space helps in maintaining a professional and productive work environment. Keep it up!",
+            "That's wonderful! Having flexibility in managing your time can contribute to better work-life balance and increased productivity.",
+            "Happy to see that! Optimizing your schedule to work during your most productive hours can lead to better quality work. You're doing great!",
+            "That's amazing! Collaborating with talented individuals from different parts of the world brings unique perspectives and enhances the quality of work. Keep up the good work!",
+            "That's great to hear! Working with professionals from different time zones allows for round-the-clock productivity and diverse expertise. Keep up the good work!",
+            "hank you for your hard work, and I'm glad to hear that you're enjoying your work. Your dedication and passion are truly appreciated. You're on the right track!"
+        ]
+    },
+    {
+        "tag": "remote-work-challenges",
+        "patterns": [
+            "One challenge I faced while working remotely was maintaining work-life boundaries.",
+            "It took some time to establish clear boundaries and avoid working excessively.",
+            "However, I implemented a strict schedule and dedicated time for personal activities, which helped me overcome this challenge."
+        ],
+        "responses": [
+            "Working remotely can indeed blur the line between work and personal life. How did you manage to establish those boundaries effectively?",
+            "Maintaining a healthy work-life balance is crucial when working remotely. What strategies have you found most helpful in achieving this balance?",
+            "Setting clear boundaries is key to avoiding burnout. How did you prioritize your personal time while working remotely?",
+            "Finding a balance between work and personal life can be challenging when working remotely. It's great to hear that you implemented strategies to overcome this challenge.",
+            "It's important to establish healthy boundaries when working remotely. Your experience can inspire others to find a work-life balance that works for them."
+        ]
+    },
+    {
+        "tag": "remote-work-life-balance",
+        "patterns": [
+            "To establish boundaries between work and personal life while working remotely, I created a designated workspace in my home. This helps me mentally separate my work environment from my personal space. Additionally, I set specific working hours and strictly adhere to them. Outside of those hours, I make a conscious effort to disconnect from work-related tasks and focus on personal activities.",
+            "Maintaining a healthy work-life balance while working remotely requires discipline and effective time management. One strategy that has worked well for me is creating a daily schedule and sticking to it. I allocate specific time blocks for work tasks, breaks, and personal activities. By following this schedule, I can ensure that I dedicate enough time and energy to both work and personal life.",
+            "Prioritizing personal time while working remotely is crucial to prevent burnout. To achieve this, I set clear boundaries by communicating my availability to my team and clients. I establish realistic deadlines and manage expectations regarding response times. Additionally, I incorporate activities that help me relax and recharge, such as exercise, hobbies, and spending quality time with loved ones."
+        ],
+        "responses": [
+            "That's a great approach! Having a dedicated workspace and sticking to a schedule can definitely help establish boundaries and maintain a healthy work-life balance.",
+            "Absolutely! Prioritizing self-care and setting specific working hours with regular breaks are effective strategies to prevent burnout and ensure a balanced work-life dynamic.",
+            "You're absolutely right! Clear communication and allocating time for personal activities are vital for maintaining a healthy work-life integration while working remotely."            
+        ]
+    },
+    {
+        "tag": "remote-work-communication",
+        "patterns": [
+            "Communication and collaboration can sometimes be a challenge when working remotely.",
+            "It requires proactive effort to ensure effective communication with teammates.",
+            "We have implemented regular video meetings and instant messaging platforms to bridge the gap and maintain strong teamwork."
+        ],
+        "responses": [
+            "Effective communication is vital in remote work. How do you ensure smooth collaboration and information sharing with your teammates?",
+            "Maintaining strong teamwork while working remotely is crucial. What tools or strategies have you found most effective in facilitating communication?",
+            "Video meetings and instant messaging platforms can be great tools for remote collaboration. I hope you can enjoy doing your job now.",
+            "I'm glad to hear that you and your team have found ways to overcome the challenges of remote communication. Your experience can provide valuable insights for others.",
+            "Remote work requires finding alternative methods of communication. It's great that you've embraced video meetings and instant messaging platforms to foster collaboration."
+        ]
+    },
+    {
+        "tag": "remote-work-communication-strategy",
+        "patterns": [
+            "To ensure smooth collaboration, we utilize project management tools like Trello and communication platforms like Slack to stay connected with our teammates. Regular video meetings help us align our goals and address any challenges effectively.",
+            "Maintaining strong teamwork in remote work requires effective communication channels. We make use of video conferencing tools like Zoom and document sharing platforms like Google Drive to facilitate real-time collaboration and information sharing."
+        ],
+        "responses": [
+            "That's excellent! Leveraging project management tools and communication platforms, along with regular video meetings, is a great way to ensure smooth collaboration and effective information sharing.",
+            "Absolutely! Utilizing video conferencing tools and document sharing platforms helps foster real-time collaboration and keeps the team connected. It's essential for maintaining strong teamwork while working remotely."
+        ]
+    },
+    {
+        "tag": "remote-work-isolation",
+        "patterns": [
+            "Remote work can sometimes feel isolating, especially when you miss out on in-person interactions.",
+            "However, I actively participate in virtual team-building activities, online forums, and industry events to stay connected with colleagues and expand my professional network."
+        ],
+        "responses": [
+            "Feeling isolated is a common challenge in remote work. How have you managed to stay connected and engaged with your colleagues despite the lack of in-person interactions?",
+            "Building and maintaining relationships while working remotely is important. What specific virtual team-building activities or online forums have you found most helpful?",
+            "Engaging with online communities and participating in industry events can be great ways to combat isolation. Which platforms or events have you found valuable in expanding your professional network?",
+            "It's commendable that you actively seek opportunities to connect with colleagues and expand your network. Your experience can inspire others to find ways to combat isolation in remote work.",
+            "Remote work can be isolating, but your proactive approach to staying connected and engaged is inspiring. It's great to hear that you actively participate in virtual team-building activities and online forums."
+        ]
+    },
+    {
+        "tag": "remote-engagement",
+        "patterns": [
+        "Despite the lack of in-person interactions, I make sure to stay connected with my colleagues through regular virtual meetings and informal chats on platforms like Slack. Additionally, we organize virtual team-building activities such as online games and virtual coffee breaks to foster camaraderie.",
+        "Building and maintaining relationships in remote work is crucial. I have found virtual team-building activities like online trivia games and virtual escape rooms to be effective in bringing the team together. Online forums like Reddit and professional networking platforms like LinkedIn have also helped me connect with like-minded professionals.",
+        "To combat isolation, I actively engage with online communities and participate in industry events. Platforms like GitHub and Stack Overflow provide valuable opportunities for knowledge sharing and networking. Additionally, I attend virtual conferences and webinars related to my field to expand my professional network."
+        ],
+        "responses": [
+        "That's great to hear! Regular virtual meetings and team-building activities are excellent ways to maintain connection and foster a sense of camaraderie. Keep up the good work!",
+        "It's wonderful that you have found effective strategies to build and maintain relationships remotely. You're doing great!",
+        "Engaging with online communities and attending virtual industry events can be valuable for professional growth. Keep it up!"
+        ]
+    },
+    {
         "tag": "promotion",
         "patterns": [
             "I just got promoted at work!",
@@ -1150,385 +1455,87 @@
         ]
     },
     {
+        "tag": "taken-step-unmet-targets",
+        "patterns": [
+        "It's disappointing when targets are not met, but I see it as a chance to learn and grow.",
+        "I believe in using setbacks as motivation to improve and achieve better results in the future.",
+        "Not meeting targets can be a valuable lesson. I'm determined to make adjustments and succeed next time."
+        ],
+        "responses": [
+        "That's a positive mindset to have! Self-reflection and identifying areas for improvement are crucial for growth.",
+        "Keep up the resilience! It's important to see unmet targets as stepping stones towards improvement.",
+        "I admire your determination to learn from setbacks. I'm confident you'll take the necessary steps to achieve your goals.",
+        "I'm sure you'll make the necessary adjustments and bounce back stronger. Keep pushing forward!",
+        "Don't be too hard on yourself. Use this experience to fuel your motivation and come back stronger than ever!"
+        ]
+    },
+    {
         "tag": "got-paid",
         "patterns": [
             "I just received my paycheck", "I got paid", "I received my payment",
-            "I got paid for my coding work, and it's a nice reward.",
-            "I'm happy to see my bank account credited with my coding salary.",
-            "Getting paid for my coding skills is so fulfilling.",
-            "I received my payment for the coding project, and I'm grateful."
+            "I got paid for my work, and it's a nice reward.",
+            "I'm happy to see my bank account credited with my salary.",
+            "Getting paid for my skills is so fulfilling.",
+            "I received my payment for the project, and I'm grateful."
         ],
         "responses": [
-            "That's wonderful! Getting paid for your coding work is a well-deserved reward for your skills and efforts. How does it feel to see your hard work reflected in your paycheck?",
-            "Congratulations on receiving your payment! It's satisfying to be compensated for your coding expertise. Make sure to celebrate and treat yourself for a job well done.",
-            "Seeing your bank account credited with your coding salary is a gratifying moment. It validates your value in the market and the impact of your coding skills. Keep up the great work!",
-            "Getting paid for your coding skills is a significant milestone. It's a testament to the value you bring to the industry. Take a moment to appreciate the rewards of your hard work and dedication.",
-            "Receiving your payment for the coding project is a great accomplishment. Your skills and efforts are recognized and compensated. Use this as a motivation to continue delivering exceptional coding work."
+            "That's wonderful! Getting paid for your work is a well-deserved reward for your skills and efforts. How does it feel to see your hard work reflected in your paycheck?",
+            "Congratulations on receiving your payment! It's satisfying to be compensated for your work. Make sure to celebrate and treat yourself for a job well done.",
+            "Seeing your bank account credited with your salary is a gratifying moment. Keep up the great work!",
+            "Getting paid for your skills is a significant milestone. Take a moment to appreciate the rewards of your hard work and dedication.",
+            "Receiving your payment for the project is a great accomplishment. Your skills and efforts are recognized and compensated. Use this as a motivation to continue delivering exceptional work!"
+        ]
+    },
+    {
+        "tag": "feeling-after-getting-paid",
+        "patterns": [
+        "Seeing my hard work reflected in my paycheck feels incredibly rewarding.",
+        "It feels amazing to be compensated for the skills and efforts I bring to the table.",
+        "It's a great feeling to see my hard work translate into tangible rewards."
+        ],
+        "responses": [
+        "Happy to see that! Getting paid for your hard work is a well-deserved reward.",
+        "Keep up the good work! It's great to know that your efforts are recognized and valued.",
+        "I hope you enjoy your job and feel motivated to continue doing excellent work!",
+        "That's fantastic! Your paycheck is a testament to your skills and dedication.",
+        "Congratulations on getting paid for your valuable contributions. It's well-deserved!"
         ]
     },
     {
         "tag": "positive-work-environment",
         "patterns": [
-            "I'm grateful to work in such a positive coding environment.",
-            "I love the supportive atmosphere in our coding team.",
-            "The positive work culture here makes coding so enjoyable.",
-            "I appreciate the collaborative nature of our coding projects.",
+            "I'm grateful to work in such a positive environment.",
+            "I love the supportive atmosphere in our team.",
+            "The positive work culture here makes so enjoyable.",
+            "I appreciate the collaborative nature of our projects.",
             "Working with such talented and positive colleagues is inspiring."
         ],
         "responses": [
-            "That's wonderful to hear! A positive work environment can have a significant impact on job satisfaction and productivity. How does it specifically contribute to your coding experience?",
-            "It's great to be part of a supportive coding team. A positive work culture fosters collaboration and helps everyone thrive. How does it influence your coding performance?",
-            "A positive work environment makes a huge difference in the coding experience. It creates a sense of belonging, encourages creativity, and boosts overall job satisfaction. How does it enhance your coding journey?",
-            "Collaborative coding projects are an excellent opportunity to learn from each other and create amazing results together. How does the collaborative nature of your coding work contribute to your professional growth?",
-            "Working with talented and positive colleagues is inspiring and can have a tremendous impact on your coding journey. How does their positivity and talent influence your own growth and motivation?"
+            "That's wonderful to hear! A positive work environment can have a significant impact on job satisfaction and productivity. How does it specifically contribute to your experience?",
+            "It's great to be part of a supportive team. A positive work culture fosters collaboration and helps everyone thrive. How does it influence your performance?",
+            "A positive work environment makes a huge difference in the experience. It creates a sense of belonging, encourages creativity, and boosts overall job satisfaction. How does it enhance your journey?",
+            "Collaborative projects are an excellent opportunity to learn from each other and create amazing results together. How does the collaborative nature of your work contribute to your professional growth?",
+            "Working with talented and positive colleagues is inspiring and can have a tremendous impact on your journey. How does their positivity and talent influence your own growth and motivation?"
         ]
     },
     {
-        "tag": "umur",
+        "tag": "positive-work-environment",
         "patterns": [
-            "berapa umurmu?",
-            "berapa usiamu?",
-            "umur kamu berapa?"
+        "A positive work environment enhances my experience in numerous ways.",
+        "Being part of a supportive team has a significant impact on my performance.",
+        "A positive work culture truly enhances my journey and overall job satisfaction.",
+        "Collaborative projects offer incredible opportunities for learning and growth.",
+        "Working with talented and positive colleagues is inspiring and motivates me to excel."
         ],
         "responses": [
-            "Saya adalah sebuah chatbot, jadi saya tidak memiliki umur."
+        "That's great to hear! A positive work environment can create a sense of belonging and foster creativity, resulting in a more fulfilling experience.",
+        "I'm glad you're part of a supportive team! A positive work culture promotes collaboration, knowledge-sharing, and ultimately helps everyone achieve better performance.",
+        "Absolutely! A positive work environment not only boosts job satisfaction but also encourages innovation and problem-solving, leading to a more rewarding journey.",
+        "Collaboration is key to professional growth, and projects provide an excellent platform to learn from talented colleagues, share ideas, and achieve remarkable results.",
+        "Working with talented and positive colleagues is incredibly motivating. Their positivity and skills create an inspiring atmosphere that drives my own growth, learning, and motivation."
         ]
-    },
-    {
-        "tag": "lokasi",
-        "patterns": [
-            "dimana kamu berada?",
-            "di mana tempatmu?",
-            "lokasi kamu di mana?"
-        ],
-        "responses": [
-            "Saya adalah chatbot virtual, jadi saya tidak memiliki lokasi fisik."
-        ]
-    },
-    {
-        "tag": "nama",
-        "patterns": [
-            "siapa nama kamu?",
-            "apa nama lengkapmu?",
-            "nama kamu apa?"
-        ],
-        "responses": [
-            "Saya adalah chatbot virtual, jadi saya tidak memiliki nama lengkap. Anda bisa memanggil saya Chatbot."
-        ]
-    },
-    {
-        "tag": "pendidikan",
-        "patterns": [
-            "kamu memiliki pendidikan apa?",
-            "apa latar belakang pendidikanmu?",
-            "darimana kamu belajar?"
-        ],
-        "responses": [
-            "Saya dirancang oleh tim Rahayoo untuk memberikan informasi dan bantuan kepada pengguna. Saya tidak memiliki latar belakang pendidikan formal."
-        ]
-    },
-    {
-        "tag": "terima-kasih",
-        "patterns": [
-            "terima kasih",
-            "makasih",
-            "thanks"
-        ],
-        "responses": [
-            "Sama-sama! Saya senang bisa membantu."
-        ]
-    },
-    {
-        "tag": "umur",
-        "patterns": [
-            "berapa umur kamu?",
-            "umur kamu berapa?"
-        ],
-        "responses": [
-            "Saya adalah chatbot virtual, jadi saya tidak memiliki umur."
-        ]
-    },
-    {
-        "tag": "produk",
-        "patterns": [
-            "apakah kamu menjual produk?",
-            "apa yang kamu jual?"
-        ],
-        "responses": [
-            "Saya adalah chatbot yang dirancang untuk memberikan informasi dan bantuan. Saya tidak menjual produk."
-        ]
-    },
-    {
-        "tag": "kesalahan",
-        "patterns": [
-            "saya mengalami kesalahan",
-            "tidak bisa menjalankan aplikasi"
-        ],
-        "responses": [
-            "Mohon maaf atas ketidaknyamanannya. Apakah Anda sudah mencoba me-restart aplikasi? Jika masih mengalami masalah, mungkin saya bisa membantu lebih lanjut jika Anda memberikan detail kesalahan yang terjadi."
-        ]
-    },
-    {
-        "tag": "film-favorit",
-        "patterns": [
-            "apa film favoritmu?",
-            "film terbaik menurutmu"
-        ],
-        "responses": [
-            "Saya adalah chatbot, jadi saya tidak memiliki film favorit. Namun, beberapa film yang sering direkomendasikan adalah Interstellar, Fast Furious, dan Avenger."
-        ]
-    },
-    {
-        "tag": "bantuan",
-        "patterns": [
-            "tolong bantu saya",
-            "butuh bantuan"
-        ],
-        "responses": [
-            "Tentu, saya akan berusaha membantu Anda. Silakan jelaskan permasalahan atau pertanyaan yang Anda hadapi, dan saya akan mencoba memberikan solusi atau informasi yang relevan."
-        ]
-    },
-    {
-        "tag": "selamat",
-        "patterns": [
-            "halo chatbot"
-        ],
-        "responses": [
-            "Ada yang bisa saya bantu?"
-        ]
-    },
-    {
-        "tag": "galau",
-        "patterns": [
-            "saya merasa sedih",
-            "hidup ini sulit",
-            "apa arti hidup?",
-            "aku bingung",
-            "bagaimana menghadapi kegagalan?"
-        ],
-        "responses": [
-            "Saya mengerti bahwa ada saat-saat ketika kita merasa sedih atau galau. Perasaan seperti itu adalah hal yang manusiawi. Jika kamu ingin berbicara tentang hal tersebut, kamu bisa mencoba berbagi dengan orang yang kamu percaya atau mencari dukungan dari teman dekat. Ingatlah bahwa dalam hidup ini, kita menghadapi berbagai tantangan dan kegagalan, tetapi itu bukan akhir dari segalanya. Setiap kegagalan adalah kesempatan untuk belajar dan tumbuh. Jangan ragu untuk mencari bantuan jika kamu merasa kesulitan menghadapi perasaan galau tersebut."
-        ]
-    },
-    {
-        "tag": "senang",
-        "patterns": [
-            "hari ini sangat menyenangkan",
-            "aku merasa bahagia",
-            "apa kabar?",
-            "halo!",
-            "ada kabar baik?"
-        ],
-        "responses": [
-            "Senang mendengarnya! Semoga hari-harimu terus dipenuhi dengan kebahagiaan. Jika ada hal khusus yang membuatmu senang, ceritakan lebih banyak tentang pengalaman tersebut. Saya senang bisa berbagi kebahagiaan denganmu!"
-        ]
-    },
-    {
-        "tag": "sakit",
-        "patterns": [
-            "aku merasa tidak enak badan",
-            "saya sedang sakit",
-            "apa yang harus saya lakukan jika sakit?",
-            "aku punya demam",
-            "sakit kepala"
-        ],
-        "responses": [
-            "Maaf mendengarnya. Jika kamu merasa tidak enak badan, penting untuk istirahat yang cukup dan menjaga pola makan yang sehat. Minum banyak air putih dan hindari aktivitas yang melelahkan. Jika kondisimu tidak membaik atau semakin parah, sebaiknya hubungi tenaga medis atau dokter terdekat. Mereka dapat memberikan nasihat medis yang lebih akurat dan tepat sesuai dengan gejala yang kamu alami."
-        ]
-    },
-    {
-        "tag": "suami",
-        "patterns": [
-            "bagaimana cara memahami suami?",
-            "apa yang harus dilakukan jika ada masalah dengan suami?",
-            "apa yang membuat suami bahagia?",
-            "bagaimana cara memperkuat hubungan dengan suami?",
-            "apa yang sebaiknya dilakukan saat suami sedang stres?"
-        ],
-        "responses": [
-            "Memahami suami adalah proses yang kontinu dan setiap hubungan memiliki dinamika yang berbeda. Komunikasi yang jujur dan saling mendengarkan adalah kunci penting dalam memahami suami. Jika ada masalah dalam hubungan, penting untuk berbicara secara terbuka dan mencari solusi bersama. Memperhatikan kebutuhan dan kebahagiaan suami juga dapat memperkuat hubungan. Saat suami sedang stres, dengarkan dia dengan empati dan tawarkan dukungan. Berusaha memahami perasaan dan perspektifnya dapat membantu meredakan stresnya. Setiap hubungan memiliki tantangan sendiri, tetapi dengan komunikasi yang baik dan saling mendukung, hubungan dengan suami dapat tumbuh menjadi lebih kuat."
-        ]
-    },
-    {
-        "tag": "hamil",
-        "patterns": [
-            "aku sedang hamil",
-            "apa yang sebaiknya dilakukan selama kehamilan?",
-            "bagaimana cara merawat kehamilan?",
-            "apa saja makanan yang baik untuk ibu hamil?",
-            "apakah olahraga aman saat hamil?"
-        ],
-        "responses": [
-            "Selamat atas kehamilanmu! Selama kehamilan, sangat penting untuk menjaga kesehatan dan keamanan baik ibu maupun janin. Pastikan untuk menjalani pemeriksaan rutin dengan dokter kandungan, mengikuti pola makan sehat, dan mendapatkan istirahat yang cukup. Hindari konsumsi makanan atau minuman yang tidak dianjurkan selama kehamilan, dan pastikan untuk berkonsultasi dengan dokter sebelum melakukan olahraga atau aktivitas fisik yang intens. Jika ada pertanyaan atau kekhawatiran selama kehamilan, jangan ragu untuk berkonsultasi dengan dokter atau bidan yang memahami kondisimu dengan baik."
-        ]
-    },
-    {
-        "tag": "istri",
-        "patterns": [
-            "bagaimana cara memahami istri?",
-            "apa yang harus dilakukan jika ada masalah dengan istri?",
-            "apa yang membuat istri bahagia?",
-            "bagaimana cara memperkuat hubungan dengan istri?",
-            "apa yang sebaiknya dilakukan saat istri sedang stres?"
-        ],
-        "responses": [
-            "Memahami istri adalah proses yang kontinu dan setiap hubungan memiliki dinamika yang berbeda. Komunikasi yang jujur dan saling mendengarkan adalah kunci penting dalam memahami istri. Jika ada masalah dalam hubungan, penting untuk berbicara secara terbuka dan mencari solusi bersama. Memberikan perhatian, penghargaan, dan dukungan pada istri juga dapat membuatnya bahagia. Saat istri sedang stres, berikan dukungan emosional dan praktis. Dengarkan dia dengan penuh perhatian dan tawarkan bantuan sesuai kebutuhannya. Setiap hubungan memiliki tantangan sendiri, tetapi dengan komunikasi yang baik dan saling mendukung, hubungan dengan istri dapat tumbuh menjadi lebih kuat."
-        ]
-    },
-    {
-        "tag": "depresi",
-        "patterns": [
-            "apa itu depresi?",
-            "bagaimana cara mengatasi depresi?",
-            "apa yang bisa dilakukan untuk membantu seseorang yang mengalami depresi?",
-            "apa tanda-tanda depresi?",
-            "kapan sebaiknya mencari bantuan profesional untuk depresi?"
-        ],
-        "responses": [
-            "Depresi adalah gangguan mental yang ditandai dengan perasaan sedih, kehilangan minat atau kegairahan, perubahan pola tidur atau nafsu makan, kelelahan, perasaan bersalah yang berlebihan, dan sulit berkonsentrasi. Mengatasi depresi membutuhkan pendekatan holistik yang melibatkan dukungan sosial, perawatan medis, dan terapi psikologis. Jika seseorang mengalami depresi, penting untuk mendengarkan dengan empati dan menunjukkan perhatian pada perasaan mereka. Bantuan profesional, seperti psikoterapi atau obat-obatan, diperlukan dalam kasus-kasus yang lebih parah. Jika kamu atau seseorang yang kamu kenal mengalami tanda-tanda depresi, sangat dianjurkan untuk mencari bantuan profesional segera."
-        ]
-    },
-    {
-        "tag": "aku depresi",
-        "patterns": [
-            "aku merasa sedih dan kosong",
-            "hidupku terasa tanpa makna",
-            "aku merasa putus asa",
-            "apa yang harus aku lakukan jika aku merasa depresi?",
-            "bagaimana cara mengatasi perasaan depresi?"
-        ],
-        "responses": [
-            "Aku memahami perasaan yang kamu alami. Merasa depresi bisa sangat berat, tetapi kamu tidak sendirian. Ada beberapa langkah yang bisa kamu coba untuk mengatasi perasaan depresi, seperti mencari dukungan dari orang terdekat, berbicara dengan seorang profesional, menjaga pola tidur dan makan yang sehat, dan melakukan aktivitas yang memberikan kepuasan dan rasa bahagia. Jika perasaan depresi terus berlanjut atau mengganggu kehidupan sehari-harimu, sangat disarankan untuk mencari bantuan dari tenaga medis atau psikolog. Kamu tidak sendirian dalam perjuangan ini, dan ada sumber daya dan dukungan yang tersedia untuk membantu kamu melalui masa sulit ini."
-        ]
-    },
-    {
-        "tag": "aku jatuh cinta",
-        "patterns": [
-            "aku merasa jatuh cinta pada seseorang",
-            "bagaimana cara mengungkapkan perasaan cinta?",
-            "apa yang harus aku lakukan jika aku jatuh cinta?",
-            "bagaimana cara mengetahui apakah seseorang juga mencintaiku?",
-            "apa yang seharusnya aku persiapkan untuk menjalin hubungan?"
-        ],
-        "responses": [
-            "Jatuh cinta adalah perasaan yang indah. Jika kamu merasa jatuh cinta pada seseorang, penting untuk mempertimbangkan cara yang baik dan bijak untuk mengungkapkan perasaanmu. Komunikasi terbuka dan jujur adalah kunci dalam mengungkapkan cinta. Cobalah untuk mengenal orang tersebut lebih dalam, melalui percakapan yang mendalam dan menghabiskan waktu bersama. Namun, ingatlah bahwa perasaan cinta tidak selalu saling berimbang, dan itu bisa menjadi situasi yang rumit. Jika kamu merasa siap untuk menjalin hubungan, penting untuk menghormati keputusan orang lain dan menjaga kesehatan emosionalmu sendiri. Selalu berkomunikasi dengan jujur dan menghargai perasaan orang lain."
-        ]
-    },
-    {
-        "tag": "aku gila",
-        "patterns": [
-            "aku merasa gila",
-            "apa yang salah dengan pikiranku?",
-            "mengapa aku merasa tidak waras?",
-            "bagaimana cara mengatasi perasaan gila?",
-            "apakah aku membutuhkan bantuan profesional?"
-        ],
-        "responses": [
-            "Aku mendengar perasaanmu dan ingin kamu tahu bahwa kamu tidak sendirian. Merasa gila atau tidak waras bisa sangat menakutkan dan membingungkan. Penting untuk diingat bahwa perasaan ini mungkin merupakan tanda adanya masalah kesehatan mental yang perlu ditangani dengan serius. Aku mendorongmu untuk mencari bantuan dari tenaga medis atau seorang profesional kesehatan mental. Mereka dapat membantu mengevaluasi situasi dan memberikan dukungan serta perawatan yang tepat untukmu. Jangan ragu untuk mencari bantuan, karena ada sumber daya dan individu yang siap membantumu mengatasi perasaan yang kamu alami."
-        ]
-    },
-    {
-        "tag": "aku ingin mati",
-        "patterns": [
-            "aku merasa ingin mati",
-            "hidup terasa berat",
-            "apa yang harus aku lakukan jika aku ingin mati?",
-            "apakah ada harapan untukku?",
-            "aku tidak tahan lagi dengan hidup ini"
-        ],
-        "responses": [
-            "Aku mendengar perasaanmu, dan aku ingin kamu tahu bahwa kamu tidak sendirian. Jika kamu merasa ingin mati atau hidup terasa berat, penting untuk mencari bantuan segera. Kamu tidak perlu menanggung beban ini sendirian. Tolong bicarakan perasaanmu kepada seseorang yang dapat dipercaya, seperti keluarga, teman, atau seorang profesional kesehatan mental. Mereka dapat memberikan dukungan dan bantuan yang kamu butuhkan. Ingatlah bahwa ada harapan dan ada jalan keluar dari perasaan ini. Kamu layak mendapatkan bantuan dan mendapatkan perawatan yang tepat. Jangan ragu untuk mencari bantuan sekarang."
-        ]
-    },
-    {
-        "tag": "aku capek",
-        "patterns": [
-            "aku merasa lelah",
-            "hidupku terasa berat",
-            "apa yang harus aku lakukan? aku merasa capek",
-            "bagaimana cara mengatasi kelelahan?",
-            "apakah ada cara untuk mengembalikan energi?"
-        ],
-        "responses": [
-            "Aku mendengar perasaanmu. Merasa capek dan lelah adalah hal yang wajar terjadi dalam kehidupan yang sibuk dan penuh tantangan. Penting untuk mengambil waktu untuk diri sendiri dan merawat kesehatan fisik serta mental. Cobalah untuk mencari cara untuk melepaskan stres, seperti beristirahat yang cukup, berolahraga, meditasi, atau melakukan aktivitas yang menenangkan. Jangan ragu untuk berbicara dengan orang terdekatmu tentang apa yang sedang kamu alami. Kadang-kadang berbagi beban dengan orang lain dapat membantu meringankan perasaan capek. Jangan lupa memberi dirimu waktu untuk bersantai dan melakukan hal-hal yang kamu nikmati. Kamu pantas mendapatkan istirahat dan perawatan diri yang baik. Ingatlah bahwa perasaan capek adalah sinyal bahwa tubuh dan pikiranmu membutuhkan istirahat dan perhatian lebih."
-        ]
-    },
-    {
-        "tag": "aku diputusin",
-        "patterns": [
-            "aku baru saja diputusin pacar",
-            "sangat sakit hati karena diputusin",
-            "bagaimana cara menghadapi perpisahan?",
-            "apa yang harus aku lakukan setelah diputusin?",
-            "apakah ada cara untuk pulih dari patah hati?"
-        ],
-        "responses": [
-            "Aku mendengar perasaanmu dan aku tahu bahwa perpisahan dan diputusin pacar bisa sangat menyakitkan. Penting untuk memberikan waktu bagi dirimu sendiri untuk menyembuhkan dan merasakan emosi yang sedang kamu alami. Izinkan dirimu untuk merasakan sedih, marah, atau kecewa, karena itu adalah bagian dari proses penyembuhan. Coba untuk berbicara dengan teman atau keluarga yang dapat memberikan dukungan emosional. Jangan ragu untuk mencari bantuan profesional seperti konselor atau terapis jika kamu merasa perlu. Mereka dapat membantu membimbingmu melalui masa sulit ini. Selain itu, berikan perhatian pada dirimu sendiri dan lakukan aktivitas yang kamu nikmati. Saling menjaga dan merawat diri sendiri akan membantu dalam proses pemulihan. Ingatlah bahwa waktunya akan menyembuhkan luka dan ada kemungkinan untuk menemukan kebahagiaan dan cinta yang baru di masa depan."
-        ]
-    },
-    {
-        "tag": "aku bahagia",
-        "patterns": [
-            "aku merasa sangat bahagia",
-            "hidupku penuh kebahagiaan",
-            "apa yang membuatmu bahagia?",
-            "bagaimana cara menikmati hidup dengan bahagia?",
-            "apakah ada tips untuk menjaga kebahagiaan?"
-        ],
-        "responses": [
-            "Senang mendengarnya bahwa kamu merasa bahagia! Kebahagiaan adalah hal yang sangat berharga dalam hidup. Untuk menjaga kebahagiaan, penting untuk memberikan perhatian pada diri sendiri dan menemukan apa yang membuatmu bahagia. Lakukan hal-hal yang kamu sukai, seperti menjalani hobi, menghabiskan waktu bersama orang yang kamu sayangi, atau mengejar impianmu. Jaga keseimbangan antara pekerjaan dan waktu santai. Fokus pada hal-hal positif dalam hidupmu dan bersyukur atas apa yang kamu miliki. Saling memberikan dukungan dan kebaikan kepada orang lain juga dapat meningkatkan kebahagiaanmu. Ingatlah bahwa kebahagiaan adalah perjalanan, bukan tujuan akhir. Nikmati setiap momen dan bersyukurlah atas kebahagiaan yang kamu rasakan!"
-        ]
-    },
-    {
-        "tag": "aku sendiri",
-        "patterns": [
-            "aku merasa kesepian",
-            "apa yang harus aku lakukan ketika aku sendiri?",
-            "sulit bagiku merasa nyaman sendiri",
-            "bagaimana caranya agar aku tidak merasa kesepian?",
-            "apakah ada tips untuk menjaga keseimbangan antara kesendirian dan kehidupan sosial?"
-        ],
-        "responses": [
-            "Saat merasa sendiri, penting untuk memberikan perhatian pada diri sendiri dan mengatasi perasaan kesepian. Coba temukan kegiatan yang kamu nikmati dan yang bisa mengisi waktu luangmu. Melakukan hobi, membaca buku, menulis jurnal, atau menonton film adalah beberapa contoh kegiatan yang dapat membuatmu merasa lebih nyaman. Jangan ragu untuk menjalin hubungan sosial baru dengan orang-orang yang memiliki minat dan hobi serupa. Bergabung dengan klub atau komunitas yang menarik bagi kamu bisa menjadi cara untuk bertemu dengan orang baru dan memperluas jaringan sosial. Selain itu, jangan lupakan pentingnya menjaga keseimbangan antara kesendirian dan kehidupan sosial. Tetaplah terhubung dengan orang-orang terdekat dan luangkan waktu untuk menghabiskan waktu bersama mereka. Ingatlah bahwa merasa sendiri kadang-kadang adalah hal yang alami, namun kamu tetap memiliki kekuatan dan kemampuan untuk menciptakan keseimbangan dan kebahagiaan dalam hidupmu."
-        ]
-    },
-    {
-        "tag": "aku kesepian",
-        "patterns": [
-            "saya merasa sangat kesepian",
-            "sulit bagiku mengatasi perasaan kesepian",
-            "bagaimana caranya agar tidak merasa kesepian?",
-            "apa yang bisa saya lakukan ketika saya kesepian?",
-            "apakah ada cara untuk mengurangi rasa kesepian?"
-        ],
-        "responses": [
-            "Saya memahami perasaan kesepian yang kamu alami. Ketika merasa kesepian, penting untuk mencari cara-cara yang dapat mengatasi perasaan tersebut. Salah satu cara adalah dengan menjalin hubungan sosial yang lebih dekat dengan orang-orang di sekitarmu. Cobalah untuk terbuka dengan teman-teman atau anggota keluarga tentang perasaan kesepian yang kamu alami. Mengajak mereka untuk berkumpul atau menghabiskan waktu bersama dapat membantu mengurangi rasa kesepian. Selain itu, mencari kegiatan yang kamu sukai atau bergabung dengan komunitas yang memiliki minat yang sama juga bisa menjadi cara untuk bertemu dengan orang-orang baru dan mengurangi perasaan kesepian. Ingatlah bahwa kamu tidak sendirian dan selalu ada seseorang yang peduli denganmu. Jangan ragu untuk mencari dukungan dan berbagi perasaan yang kamu alami kepada mereka."
-        ]
-    },
-    {
-        "tag": "aku tidak subur",
-        "patterns": [
-            "saya mengalami masalah kesuburan",
-            "apa yang harus saya lakukan jika merasa mandul?",
-            "bagaimana cara mengatasi perasaan putus asa karena masalah kesuburan?",
-            "adakah saran untuk menghadapi kenyataan bahwa saya mandul?",
-            "apa saja langkah yang bisa diambil jika ingin memiliki anak tapi mandul?"
-        ],
-        "responses": [
-            "Saya mengerti bahwa masalah kesuburan dan merasa mandul bisa sangat menantang secara emosional. Penting untuk diingat bahwa kesuburan adalah masalah kompleks dan dapat melibatkan berbagai faktor. Jika kamu mengalami masalah kesuburan, ada beberapa langkah yang bisa kamu lakukan. Pertama, berkonsultasilah dengan dokter spesialis kandungan atau dokter kesuburan untuk mengevaluasi kondisi dan mendapatkan saran yang tepat. Mereka dapat membantu menentukan penyebab masalah kesuburan dan memberikan opsi pengobatan atau prosedur medis yang sesuai. Selain itu, penting juga untuk menjaga kesehatan fisik dan mental secara menyeluruh. Ini meliputi menjaga pola makan yang seimbang, berolahraga teratur, mengelola stres, dan mendapatkan dukungan emosional dari pasangan, keluarga, atau kelompok dukungan. Terakhir, ingatlah bahwa menjadi orangtua bukanlah satu-satunya bentuk kebahagiaan dan makna hidup. Ada banyak cara untuk meraih kebahagiaan dan kepuasan dalam kehidupan, terlepas dari masalah kesuburan. Jangan ragu untuk mencari bantuan dan dukungan yang kamu butuhkan selama proses ini."
-        ]
-    },
-    {
-        "tag": "aku sebel",
-        "patterns": [
-          "Aduh, aku jadi sebel!",
-          "Gimana sih, aku udah sebel banget!",
-          "Kenapa selalu begini? Aku sebel!"
-        ],
-        "responses": [
-          "Santai saja, cobalah untuk tenang dan cari jalan keluar yang baik. Semoga semuanya bisa lebih baik."
-        ]
-      }
+        }
+
 
     ]
 }

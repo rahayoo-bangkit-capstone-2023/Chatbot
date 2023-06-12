@@ -16,6 +16,7 @@ import billboard
 import time
 from pygame import mixer
 import COVID19Py
+import joblib
 
 
 from nltk.stem import WordNetLemmatizer
@@ -24,7 +25,7 @@ lemmatizer=WordNetLemmatizer()
 words=[]
 classes=[]
 documents=[]
-ignore=['?','!',',',"'s", "'", " so "]
+ignore=['?','!',',',"'s", "'"]
 
 data_file=open('intents.json').read()
 intents=json.loads(data_file)
@@ -80,7 +81,8 @@ model.add(Dense(len(y_train[0]),activation='softmax'))
 adam=keras.optimizers.Adam(0.001)
 model.compile(optimizer=adam,loss='categorical_crossentropy',metrics=['accuracy'])
 #model.fit(np.array(X_train),np.array(y_train),epochs=200,batch_size=10,verbose=1)
-weights=model.fit(np.array(X_train),np.array(y_train),epochs=200,batch_size=10,verbose=1)    
+weights=model.fit(np.array(X_train),np.array(y_train),epochs=200,batch_size=10,verbose=1)
+joblib.dump(model, 'model.pkl')
 model.save('mymodel.h5',weights)
 
 from keras.models import load_model
@@ -124,83 +126,7 @@ def get_response(return_list,intents_json):
         tag='noanswer'
     else:    
         tag=return_list[0]['intent']
-    if tag=='datetime':        
-        print(time.strftime("%A"))
-        print (time.strftime("%d %B %Y"))
-        print (time.strftime("%H:%M:%S"))
-
-    if tag=='google':
-        query=input('Enter query...')
-        chrome_path = r'C:\Program Files (x86)\Google\Chrome\Application\chrome.exe %s'
-        for url in search(query, tld="co.in", num=1, stop = 1, pause = 2):
-            webbrowser.open("https://google.com/search?q=%s" % query)
-    if tag=='weather':
-        api_key='987f44e8c16780be8c85e25a409ed07b'
-        base_url = "http://api.openweathermap.org/data/2.5/weather?"
-        city_name = input("Enter city name : ")
-        complete_url = base_url + "appid=" + api_key + "&q=" + city_name
-        response = requests.get(complete_url) 
-        x=response.json()
-        print('Present temp.: ',round(x['main']['temp']-273,2),'celcius ')
-        print('Feels Like:: ',round(x['main']['feels_like']-273,2),'celcius ')
-        print(x['weather'][0]['main'])
-        
-    if tag=='news':
-        main_url = " http://newsapi.org/v2/top-headlines?country=in&apiKey=bc88c2e1ddd440d1be2cb0788d027ae2"
-        open_news_page = requests.get(main_url).json()
-        article = open_news_page["articles"]
-        results = [] 
-          
-        for ar in article: 
-            results.append([ar["title"],ar["url"]]) 
-          
-        for i in range(10): 
-            print(i + 1, results[i][0])
-            print(results[i][1],'\n')
-            
-    if tag=='cricket':
-        c = Cricbuzz()
-        matches = c.matches()
-        for match in matches:
-            print(match['srs'],' ',match['mnum'],' ',match['status'])
     
-    if tag=='song':
-        chart=billboard.ChartData('hot-100')
-        print('The top 10 songs at the moment are:')
-        for i in range(10):
-            song=chart[i]
-            print(song.title,'- ',song.artist)
-    if tag=='timer':        
-        mixer.init()
-        x=input('Minutes to timer..')
-        time.sleep(float(x)*60)
-        mixer.music.load('Handbell-ringing-sound-effect.mp3')
-        mixer.music.play()
-        
-    if tag=='covid19':
-        
-        covid19=COVID19Py.COVID19(data_source='jhu')
-        country=input('Enter Location...')
-        
-        if country.lower()=='world':
-            latest_world=covid19.getLatest()
-            print('Confirmed:',latest_world['confirmed'],' Deaths:',latest_world['deaths'])
-        
-        else:
-                
-            latest=covid19.getLocations()
-            
-            latest_conf=[]
-            latest_deaths=[]
-            for i in range(len(latest)):
-                
-                if latest[i]['country'].lower()== country.lower():
-                    latest_conf.append(latest[i]['latest']['confirmed'])
-                    latest_deaths.append(latest[i]['latest']['deaths'])
-            latest_conf=np.array(latest_conf)
-            latest_deaths=np.array(latest_deaths)
-            print('Confirmed: ',np.sum(latest_conf),'Deaths: ',np.sum(latest_deaths))
-
     list_of_intents= intents_json['intents']    
     for i in list_of_intents:
         if tag==i['tag'] :
