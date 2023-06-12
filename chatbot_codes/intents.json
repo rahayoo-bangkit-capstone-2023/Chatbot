@@ -237,7 +237,7 @@
         {
             "tag": "flat-reply",
             "patterns": [
-                "not much to report", "just another day at work",
+                "not much to report", "just another day at work", "as usual",
                 "just a typical day", "It was a productive day overall.",
                 "nothing out of the ordinary", "There were a couple of noteworthy events during the day.",
                 "no major highlights", "nothing too exciting"
@@ -251,7 +251,7 @@
         {
             "tag": "no-reply",
             "patterns": [
-                "No, I think I've shared everything I wanted to.",
+                "No, I think I've shared everything I wanted to.", "it's enough", "enough", "no", "nope",
                 "No, I've covered all the important aspects.",
                 "No, there's nothing more to add at the moment" 
             ],
@@ -332,7 +332,13 @@
     },
     {"tag": "casual",
         "patterns": ["Oh I see.", "ok", "okay", "nice", "Whatever", "K", "Fine", "yeah", "yes", "no", "not really"],
-        "responses": ["Let's discuss further why you're feeling this way.", "How were you feeling last week?", "I'm listening. Please go on.", "Tell me more", "Can you elaborate on that?", "Come Come elucidate your thoughts"]
+        "responses": [
+        "Are you finished? If so, you can simply say 'done' to indicate completion.", 
+        "Okay. Do  you want to end this conversation? If you have, feel free to let me know by saying 'done.", 
+        "I'm listening. Please go on if you want to continue the conversation. If you dont want to, you can say 'done'.", 
+        "I'm here to assist you further. If you'd like to continue our conversation, please go ahead. But if you wish to end it, you can simply say 'done.'", 
+        "Are you done sharing your thoughts? If you are, please feel free to indicate it by saying 'done.'" 
+        ]
     },
     {"tag": "anxious",
         "patterns": ["I feel so anxious.", "I'm so anxious because of "],
