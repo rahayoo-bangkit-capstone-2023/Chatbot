@@ -270,11 +270,10 @@
                 "No, there's nothing more to add at the moment" 
             ],
             "responses": [
-                "If you want to end our discussion, you can simply say 'done'.",
-                "Feel free to let me know if you'd like to conclude our conversation by saying 'done'.",
-                "When you're ready to wrap up our chat, just say 'done' and we can finish here.",
-                "If you feel like ending our conversation, a simple 'done' will signal that you're finished.",
-                "Whenever you're ready to conclude our dialogue, you can let me know by saying 'done'."
+                "Okay. I'm still here if you still want to talk.",
+                "Alright. I'm still here and ready to listen if you need someone to talk to.",
+                "Rest assured, I'm here for you if you ever feel like opening up or just having a conversation.",
+                "I see. Remember, I'm just a message away if you ever want to talk or have something on your mind."
             ]
         },
         {
@@ -347,11 +346,8 @@
     {"tag": "casual",
         "patterns": ["Oh I see.", "ok", "okay", "nice", "Whatever", "K", "Fine", "yeah", "yes", "no", "not really"],
         "responses": [
-        "Are you finished? If so, you can simply say 'done' to indicate completion.", 
-        "Okay. Do  you want to end this conversation? If you have, feel free to let me know by saying 'done.", 
-        "I'm listening. Please go on if you want to continue the conversation. If you dont want to, you can say 'done'.", 
-        "I'm here to assist you further. If you'd like to continue our conversation, please go ahead. But if you wish to end it, you can simply say 'done.'", 
-        "Are you done sharing your thoughts? If you are, please feel free to indicate it by saying 'done.'" 
+        "Okay. Do you still want to talk? I'm still here if you need me.",
+        "Alright. If you want still to continue our chat, remember that I'm still here and ready to listen if you need someone to talk to."
         ]
     },
     {"tag": "anxious",
@@ -386,12 +382,10 @@
         "That's all i have to say", 
         "no, that would be all"],
         "responses": [
-        "I heard you & noted it all. If you want to wrap it up, you can indicate it by saying 'done'.", 
-        "Oh okay we're done for today then. You can simply say 'done' to end our conversation.", 
-        "I hope you have a great day. You can simply say 'done' to end our conversation.", 
-        "Okay we're done. You can say 'done' to end our chat.",
-        "If you want to terminate, please indicate it by saying 'done'.", 
-        "Okay I see. You can say 'done' to end it. Have a good rest."
+        "Okay. I'm still here if you still want to talk.",
+        "Alright. I'm still here and ready to listen if you need someone to talk to.",
+        "Rest assured, I'm here for you if you ever feel like opening up or just having a conversation.",
+        "I see. Remember, I'm just a message away if you ever want to talk or have something on your mind."
     ]
     },
     {"tag": "suicide",
@@ -468,7 +462,7 @@
     },
     {"tag": "rahayoo-useful",
         "patterns": ["thank you very much again. i'll continue practicing meditation and focus on what i can control."],
-        "responses": ["I'm glad you found this useful. Is there something else I can help you with? If there's not, you can say 'done' to end the conversation."]
+        "responses": ["You're welcome. I'm glad you found this useful."]
     },
     {"tag": "user-advice",
         "patterns": ["I want some advice.", "I need some advice.", "I need advice on something"],
