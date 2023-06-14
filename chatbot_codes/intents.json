@@ -5,14 +5,13 @@
             "tag": "greeting",
             "patterns": [
                 "Hi there",
-                "How are you",
                 "Is anyone there?",
                 "Hey",
                 "Hola",
                 "Hello",
                 "Good day",
                 "Namaste",
-                "yo"
+                "yo", "Hai", "Halo"
             ],
             "responses": [
                 "Hello. How was your day?",
@@ -21,20 +20,6 @@
             ],
             "context": [
                 ""
-            ]
-        },
-        {
-            "tag": "asking-how-it-is",
-            "patterns": [
-                "Hello how are you?", "Hi, how are you?", "My day was great. How about you?",
-                "Whats up", "Wazzup", "How are you", "sup", "How you doing",
-                "Greetings, how are you doing?", "I had a fantastic day. How about you?",
-                "Hey there, how are you?"
-            ],
-            "responses": [
-                "All good. What about you? Do you want to talk more about your day?",
-                "Hello! I'm good if you're asking. How about you? Would you like to discuss further about your day?",
-                "Hi! I'm doing well. Do you want to talk about how was your day at work?"
             ]
         },
         {
@@ -136,18 +121,6 @@
             ],
             "responses": [
                 "I am Rahayoo, a Deep-Learning chatbot"
-            ]
-        },
-        {
-            "tag": "whatsup",
-            "patterns": [
-                "Whats up",
-                "Wazzup",
-                "How are you",
-                "sup","How you doing"
-            ],
-            "responses": [
-                "All good..What about you?"
             ]
         },
         {
@@ -259,7 +232,7 @@
             "responses": [
                 "Do you want to talk more about it?",
                 "Do you have more to say about your day?",
-                "Do you want to share how was your day been?"
+                "Do you want to share more about how your day has been?"
             ]
         },
         {
@@ -320,7 +293,7 @@
                 "how old are you","when were you made","what is your age"
             ],
             "responses": [
-                "I was made in 2020, if that's what you are asking!"
+                "I was made in 2023, if that's what you are asking!"
             ]
         },
         {"tag": "sad",
@@ -475,6 +448,20 @@
             "I'm sorry to hear that you're experiencing burnout at work. Could you tell me why you're feeling this way?", 
             "Have you considered taking some time off or scheduling a vacation?", 
             "Spending time in nature and practising mindfulness exercises can be beneficial for managing burnout. It's important to prioritize self-care and give yourself permission to take breaks."
+        ]
+    },
+    {
+        "tag": "asking-how-it-is",
+        "patterns": [
+            "Hello how are you?", "Hi, how are you?", "My day was great. How about you?",
+            "Whats up", "Wazzup", "How are you", "sup", "How you doing", "Hi, how's it going?",
+            "Greetings, how are you doing?", "I had a fantastic day. How about you?",
+            "Hey there, how are you?"
+        ],
+        "responses": [
+            "All good. What about you? Do you want to talk more about your day?",
+            "Hello! I'm good if you're asking. How about you? Would you like to discuss further about your day?",
+            "Hi! I'm doing well. Do you want to talk about how was your day at work?"
         ]
     },
     {
@@ -873,6 +860,8 @@
         "tag": "technical-issues-responses",
         "patterns": [
         "I haven't reached out to the IT support team yet. I'm not sure if they can help with this particular issue.",
+        "I've tried to troubleshooting alone, but it's not working.",
+        "I've been trying to fix the problem on my own, but it didn't even cross my mind to ask the IT support team for help.",
         "I've tried troubleshooting the problem on my own, but I haven't thought about contacting the IT support team.",
         "I'm hesitant to reach out to the IT department because I'm afraid they might not be able to resolve the issue.",
         "I haven't considered consulting with technical experts because I thought I could figure it out on my own.",
