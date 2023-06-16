@@ -6,7 +6,7 @@ Rahayoo is a counsellor assistant chatbot developed with Python3, designed to en
 ## Project UI
 Home Page:
 
-![image](https://raw.githubusercontent.com/Karan-Malik/Chatbot/master/UI/main_screen.PNG?token=AKGUW5C2TMM37OQE5FSPXLS66D55O)
+![image](https://github.com/rahayoo-bangkit-capstone-2023/Chatbot/blob/main/UI/Rahayoo_main_screen.png)
 
 To run it locally on your system, follow these steps:
 1. Clone this repository onto your system. On Command Prompt, run the following command:
