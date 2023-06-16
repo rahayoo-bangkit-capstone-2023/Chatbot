@@ -1,7 +1,7 @@
-# Ted, The Deep-Learning Chatbot
+# Rahayoo, The Counseling Assistant Chatbot
 
-## About this Project
-Ted is a multipurpose chatbot made using Python3, who can chat with you and help in performing daily tasks. It uses NLP and Deep-Learning to analyse the user's message, classify it into the a broader category and then reply with a suitable message or the required information. It is hosted using flask and is available on heroku at the link specified above. 
+## Regarding this Project
+Rahayoo is a counsellor assistant chatbot developed with Python3, designed to engage in conversations and attentively address your concerns after work. It uses NLP and Deep-Learning to examine your messages thoroughly, categorize them into broader contexts, and reply to appropriate responses tailored to the message you've sent. The chatbot is hosted using Flask and can be accessed via the provided link.
 
 ## Project UI
 Home Page:
@@ -12,27 +12,25 @@ To run it locally on your system, follow these steps:
 1. Clone this repository onto your system. On Command Prompt, run the following command:
 
 ```
-git clone https://github.com/Karan-Malik/Chatbot.git
+git clone https://github.com/rahayoo-bangkit-capstone-2023/Chatbot.git
 ```
 2. Change your directory to Chatbot:
 ```
 cd Chatbot
 ```
-3. Make sure you have all the required libraries listed in requirements.txt. In case any of the libraries are missing, install them using pip. Type this command into your Command Prompt, replacing 'Your-library-name' by the required library name:
+3. Please ensure you have all the necessary libraries mentioned in the requirements.txt file. If any libraries are absent, you can install them using pip. Execute the following command in your Command Prompt, replacing 'library-name' with the name of the library you need:
 ```
-pip install Your-library-name 
+pip install library-name 
 ```
-4. Then run the follwing commands to run the application:
+4. Execute the following commands to launch the application:
 ```
 set FLASK_APP=chatbot.py
 flask run
 ```
 
-5. Enter the url provided after running the previous commands into your web browser
+5. Open your web browser and input the URL provided after executing the preceding commands.
 
-Ted is now ready to chat!
+Rahayoo is now prepared for a conversation!
 
-#### I would like to thank [Ashutosh Varma](https://github.com/ashutoshvarma) and [Manorit Chawdhry](https://github.com/manorit2001) for their help and contribution to this project. Do check out their Github accounts!
-
-##### Copyright (c) 2020 Karan-Malik
+##### We would like to acknowledge and extend credit to Karan Malik for his project, as it has paved the way for the Rahayoo chatbot's further development and progress in our endeavours.
 
